@@ -9,7 +9,7 @@
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #bd5d38;
+  color: var(--clr-theme-secondary);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -21,7 +21,7 @@
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #974a2d;
+  color: var(--clr-theme-main);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -278,21 +278,21 @@
   display: none;
 }
 
-#sideNav {
+#side-nav-02 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-#sideNav .navbar-nav .nav-item .nav-link {
+#side-nav-02 .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-#sideNav .navbar-toggler:focus {
-  outline-color: #0fdb53;
+#side-nav-02 .navbar-toggler:focus {
+  outline-color: var(--clr-theme-main);
 }
 
 @media (min-width: 992px) {
-  #sideNav {
+  #side-nav-02 {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
@@ -302,31 +302,31 @@
     width: 10rem;
     height: 100vh;
   }
-  #sideNav .navbar-brand {
+  #side-nav-02 .navbar-brand {
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
   }
-  #sideNav .navbar-brand .img-profile {
+  #side-nav-02 .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
-  #sideNav .navbar-collapse {
+  #side-nav-02 .navbar-collapse {
     display: flex;
     align-items: flex-start;
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
   }
-  #sideNav .navbar-collapse .navbar-nav {
+  #side-nav-02 .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
+  #side-nav-02 .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  #side-nav-02 .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
 }
@@ -346,7 +346,7 @@
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: var(--clr-theme-main);
 }
 
 .dev-icons {
@@ -409,7 +409,7 @@ p {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: var(--clr-theme-main) !important;
 }
 
 .text-secondary {
@@ -460,5 +460,5 @@ section.resume-section .resume-section-content {
 }
 
 .navbar .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--clr-theme-main);
 }

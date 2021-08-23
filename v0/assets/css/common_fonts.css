@@ -22,7 +22,32 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
 
-  --clr-heading: #198754;
+  --clr-theme-main: #3aafa9;
+  --clr-post-heading: #2b807b;
+  --clr-post-text: #6c757d;
+  --clr-post-link-active: #047f97;
+
+  --clr-sidenav-link-category: #6c6c6c;
+  --clr-sidenav-link-title: #6c6c6c;
+
+  --clr-heavnav-bg: #ffffff;
+  --clr-headnav-link: #5e5e5e;
+
+  --clr-home-intro-heading: #454545;
+  --clr-home-intro-text: #5b5b5b;
+  --clr-home-social-icons: var(--clr-theme-main);
+
+  --clr-1: #2b7a78;
+  --clr-2: #def2f1;
+  --clr-3: #57ba98;
+  --clr-4: #3b945e;
+  --clr-6: #1f6521;
+  --clr-7: #ffc200;
+  --clr-8: #ffc200;
+  --clr-9: #ffc200;
+  --clr-10: #ffc200;
+
+  --clr-theme-secondary: #64032c;
   --clr-profile-sidebar: ;
   --clr-btn-hover: #ffc200;
 }

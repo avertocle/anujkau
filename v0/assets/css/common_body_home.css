@@ -6,16 +6,6 @@ body {
   padding: 8rem 0;
 }
 
-/* 
-.small-text {
-  color: #5b5b5b;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 50px;
-  letter-spacing: 0.2px;
-} */
-
 ul {
   margin: 0;
   padding: 0;
@@ -30,7 +20,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  color: var(--clr-theme-main) !important;
 }
 
 p {
@@ -73,7 +63,7 @@ strong {
 }
 
 .text-color-02 {
-  color: #ffc200;
+  color: var(--clr-theme-main);
 }
 
 @media (min-width: 993px) {
