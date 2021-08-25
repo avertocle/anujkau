@@ -66,6 +66,15 @@ strong {
   color: var(--clr-theme-main);
 }
 
+.b-example-divider {
+  flex-shrink: 0;
+  width: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 0 0 0 0;
+  margin-right: 1rem;
+}
+
 @media (min-width: 993px) {
   body {
     padding: 1rem 2rem 2rem 2rem;

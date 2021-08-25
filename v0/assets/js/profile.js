@@ -2,10 +2,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
     //console.log("inside script");
     // Activate Bootstrap scrollspy on the main nav element
-    const sideNav = document.body.querySelector('#side-nav-02');
+    const sideNav = document.body.querySelector('#side-nav-profile');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
-            target: '#side-nav-02',
+            target: '#side-nav-profile',
             offset: 74,
         });
     };

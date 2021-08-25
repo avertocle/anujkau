@@ -1,4 +1,66 @@
-.contact-head h1 {
+.contact {
+  align-items: center;
+  text-align: justify;
+  margin: 2rem 20rem;
+}
+
+.contact h1 {
   text-align: center;
-  color: var(--clr-heading);
+  font-weight: normal;
+  font-size: 2rem;
+  color: var(--clr-contact-heading);
+}
+
+.contact .quote {
+  border-radius: 2rem;
+  background-color: var(--clr-contact-quote-bg);
+  text-align: center;
+  padding: 1rem;
+  margin: 5rem 0rem;
+}
+
+.contact .quote blockquote {
+  color: var(--clr-contact-quote-text);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.contact .quote cite {
+  color: var(--clr-contact-quote-cite);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.contact .cta {
+  text-align: center;
+}
+
+.contact .cta h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.contact .cta p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.contact .cta a {
+  text-align: center;
+  font-weight: normal;
+}
+
+.intro-social-icons {
+  background-color: var(--clr-home-social-icons);
+  border-color: var(--clr-home-social-icons) !important;
+  border-radius: 1rem;
+}
+
+.intro-social-icons:hover {
+  color: var(--clr-home-social-icons);
+  background-color: #ffffff;
+  border-color: black;
 }

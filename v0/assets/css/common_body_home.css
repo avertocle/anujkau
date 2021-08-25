@@ -1,5 +1,18 @@
+/* html {
+  background: url(../img/bg02.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
 body {
   font-family: "Maven Pro", sans-serif;
+  /* background: url(../img/bg01.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
 .full-screen {
@@ -69,6 +82,7 @@ strong {
 @media (min-width: 993px) {
   body {
     padding: 1rem 4rem 2rem 4rem;
+    /* margin: 1rem 4rem 2rem 4rem; */
   }
 }
 

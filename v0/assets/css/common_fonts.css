@@ -31,11 +31,26 @@
   --clr-sidenav-link-title: #6c6c6c;
 
   --clr-heavnav-bg: #ffffff;
-  --clr-headnav-link: #5e5e5e;
+  --clr-headnav-link: #dba503;
+  /* #5e5e5e; */
 
   --clr-home-intro-heading: #454545;
   --clr-home-intro-text: #5b5b5b;
   --clr-home-social-icons: var(--clr-theme-main);
+
+  --clr-sidenav-profile-link-category: #6c6c6c;
+  --clr-sidenav-profile-link-title: #6c6c6c;
+  --clr-profile-h1: #2b807b;
+  --clr-profile-h2: var(--clr-theme-main);
+  --clr-profile-h3: #454545;
+  --clr-profile-text: #5b5b5b;
+  --clr-profile-time: #454545;
+
+  --clr-contact-heading: var(--clr-theme-main);
+  --clr-contact-quote-text: #8f8f8f;
+  --clr-contact-quote-cite: #8f8f8f;
+  /* --clr-contact-quote-bg: #def2f1; */
+  --clr-contact-quote-bg: #def2f1;
 
   --clr-1: #2b7a78;
   --clr-2: #def2f1;

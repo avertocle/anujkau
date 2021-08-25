@@ -1,3 +1,7 @@
+section.about {
+  min-height: 70vh;
+}
+
 .intro-heading {
   font-size: 40px;
   font-weight: normal;

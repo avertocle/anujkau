@@ -24,12 +24,11 @@
     <!-- Common Styles -->
     <link rel="stylesheet" href="assets/css/common_fonts.css" />
     <link rel="stylesheet" href="assets/css/common_body_other.css" />
-    <link rel="stylesheet" href="assets/css/common_footer.css" />
 
     <!-- Page Specific Stuff -->
     <title>Anuj's Profile</title>
     <link rel="stylesheet" href="assets/css/profile.css" />
-    <script src="assets/js/profile.js"></script>
+    <!-- <script src="assets/js/profile.js"></script> -->
   </head>
   <body id="page-top">
     <!-- NAVBAR : HEAD -->
@@ -41,203 +40,158 @@
     </script>
 
     <!-- NAVBAR : SIDE -->
-    <nav class="navbar navbar-expand-lg bg-sidebar" id="side-nav-02">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"> </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-        </ul>
+
+    <!-- <div class="container d-flex">
+      <div class="side-nav-02 sticky-top h-100">
+        <nav class="navbar navbar-expand-lg" id="side-nav-profile">
+          <a class="js-scroll-trigger" href="#page-top"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link subnav" href="exp-moonfrog">Moonfrog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav" href="exp-moonfrog">Proptiger</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav" href="exp-moonfrog">Exarb</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link subnav" href="exp-moonfrog">Citrix</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
-    <div class="container d-flex">
-      <div class="col-2 d-none d-lg-block"></div>
-      <div class="b-example-divider d-none d-lg-block"></div>
+      <div class="b-example-divider d-none d-lg-block"></div> -->
+
       <!-- Page Content-->
-      <div class="container-fluid p-0">
+      <div class="container-fluid">
         <!-- About-->
-        <section class="resume-section" id="about">
-          <div class="resume-section-content">
-            <h1 class="mb-0">
-              Foo
-              <span class="text-primary">Bar</span>
-            </h1>
-            <div class="subheading mb-5">
-              Bangalore, India
-              <a href="mailto:anujkaushik3107@email.com">anujkaushik3107@gmail.com</a>
-            </div>
-            <p class="lead mb-5">
-              I am a Software Engineer with 10+ years of industry experience in both individual contributer, and
-              management roles. I love working in startup environments taking on broader roles and have done so for last
-              8 years.
-            </p>
+        <section class="profile-section" id="about">
+          <div class="profile-section-content">
+            <h1>Summary</h1>
+            <p>I started by career with Citrix Systems working on kernel modules. 
+              After that, I worked on my own startup building options trading infrastructure. 
+              Post that, I took up backend engginnering roles with Proptiger and Moonfrog. 
+              Lately, I worked as an engineering manager for Moonfrog in one of their game teams</p>
+            <p>This page gives a very high level summary of my career so far. Please get in touch with me if a detailed resume is needed.</p>
           </div>
         </section>
         <hr class="m-0" />
         <!-- Experience-->
-        <section class="resume-section" id="experience">
-          <div class="resume-section-content">
-            <h2 class="mb-5">Experience</h2>
+        <section class="profile-section" id="experience">
+          <div class="profile-section-content">
+            <h1>Experience</h1>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                <h3 class="mb-0">Engineering Manager</h3>
-                <div class="subheading mb-3">Moonfrog Labs</div>
-                <p>
-                  Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day,
-                  going forward, a new normal that has evolved from generation X is on the runway heading towards a
-                  streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
-                  offshoring.
+                <h2>Moonfrog Labs</h3>
+                <p class="time-range">September 2016 - December 2020</p>
+                <p> I joined Moonfrog as a senior software engineer in their data analytics team. 
+                  I worked on scaling the in-house ETL pipeline and developing the data-warehousing infra. 
+                  My role started as an individual contributor and later evolved into a team lead as the team grew.</p>
+                  <p> I left Moonfrog after 1.5 years to evaluate the interest & feasibility of persuing a doctorate. 
+                    After more serious consideration and research, it turned out a doctorate was not the right path for me.</p>
+                <p>I joined Moonfrog back, after three months of break, to work on their flagship game TeenPattiGold. 
+                  I joined as a senior engineer and then went on to take up larger responsibilities as an engineering manager for the same team. 
+                  As an EM, my role aimed at being an efficient bridge between product and engineering, focussing primarily on execution, processes and hiring.
+                  </p>
+                  <p>I was in this role for about 2.5 years and left in Dec-2020 to persue my own venture.  
                 </p>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">September 2016 - December 2020</span>
               </div>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
               <div class="flex-grow-1">
-                <h3 class="mb-0">Senior Software Engineer</h3>
-                <div class="subheading mb-3">Proptiger</div>
-                <p>
-                  Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the
-                  digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the
-                  information highway will close the loop on focusing solely on the bottom line.
+                <h2>Proptiger</h3>
+                <p class="time-range">May 2014 - June 2016</p>
+                <p> I joined Proptiger as a software engineer in their backend api team.  
+                  I worked as an individual contributor on the search infrastructure, datalabs (b2b offering) 
+                  and platform revisioning of makaan.com post makaan's acquisition.
                 </p>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">May 2014 - June 2016</span>
-              </div>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
               <div class="flex-grow-1">
-                <h3 class="mb-0">Co-Founder/Software Engineer</h3>
-                <div class="subheading mb-3">Exarb Innovations Pvt. Ltd.</div>
-                <p>
-                  Podcasting operational change management inside of workflows to establish a framework. Taking seamless
-                  key performance indicators offline to maximise the long tail. Keeping your eye on the ball while
-                  performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
-                </p>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">March 2013 - April 2015</span>
+                <h2>Exarb</h3>
+                <p class="time-range">March 2013 - April 2015</p>
+                <p> At Exarb we build an end-to-end trading system aimed at FNO arbitrage in NSE market. 
+                  Products aimed at BSE-Currency market and BSE Market-Making were also developed as part of a complete suite.
+                  This whole suite was developed in an exclusive partnership with an institutional trading firm 
+                  and was profitable from the day of its launch</p>
+                  <p>The product is still in play and the company has since exapnded to other financial products as well.</p>
               </div>
             </div>
             <div class="d-flex flex-column flex-md-row justify-content-between">
               <div class="flex-grow-1">
-                <h3 class="mb-0">Software Engineer 2</h3>
-                <div class="subheading mb-3">Citrix</div>
-                <p>
-                  Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate
-                  B2C users after installed base benefits. Dramatically visualize customer directed convergence without
-                  revolutionary ROI.
-                </p>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">July 2011 - Feb 2013</span>
-              </div>
+                <h2>Citrix</h3>
+                <p class="time-range">July 2011 - Feb 2013</p>
+                <p>I joined Citrix as in their flagship product team NetScaler - Load Balancing. 
+                  As an entry level engineer, I ended up fixing a lot of bugs and then some more bugs. Fixing bugs is literally, all I did for an entire year. </p>
+                  <p>Once I got the hang of things I worked on command validation framework for devices operating in a cluster
+                  and on extending the GSLB (Global Server Load Balancing) statistics aggregation functionality from 
+                  aggregation on single box to aggregation for a cluster of devices</p>
+                <p>I left Citrix to persue my own venture.</p>
             </div>
           </div>
         </section>
         <hr class="m-0" />
         <!-- Education-->
-        <section class="resume-section" id="education">
-          <div class="resume-section-content">
-            <h2 class="mb-5">Education</h2>
+        <section class="profile-section" id="education">
+          <div class="profile-section-content">
+            <h1>Education</h1>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
-                <h3 class="mb-0">Indian Institute of Technology, BHU Varanasi</h3>
-                <div class="subheading mb-3">Integrated M.Tech (5 Years)</div>
-                <div>Mathematic & Computing</div>
-              </div>
-              <div class="flex-shrink-0">
-                <span class="text-primary">August 2006 - May 2011</span>
+                <h2>Integrated M.Tech (5 Years) in Mathematics & Computing</h2>
+                <h3>Indian Institute of Technology, BHU Varanasi</h3>
+                <p class="time-range">August 2006 - May 2011</p>
+                <h3 class="m-0">Post Grad Dissertation</h3>
+                <p class="m-0"> Subject Area: Non-Linear Dynamics and Chaos</p>
+                <p>Study of chaotic behavior in fractional order Non-Linear dynamic systems and chaos synchronization 
+                  of two different fractional order chaotic systems.
+                </p>
               </div>
             </div>
           </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-          <div class="resume-section-content">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Programming Languages & Tools</div>
-            <ul class="list-inline dev-icons">
-              <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-              <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-              <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-              <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-              <li class="list-inline-item"><i class="fab fa-react"></i></li>
-              <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-              <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-              <li class="list-inline-item"><i class="fab fa-less"></i></li>
-              <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-              <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-              <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-              <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-            </ul>
-            <div class="subheading mb-3">Workflow</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <span class="fa-li"><i class="fas fa-check"></i></span>
-                Mobile-First, Responsive Design
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-check"></i></span>
-                Cross Browser Testing & Debugging
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-check"></i></span>
-                Cross Functional Teams
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-check"></i></span>
-                Agile Development & Scrum
-              </li>
-            </ul>
-          </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-          <div class="resume-section-content">
-            <h2 class="mb-5">Interests</h2>
-            <p>
-              Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
-              skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free
-              climbing, and kayaking.
-            </p>
-            <p class="mb-0">
-              When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an
-              aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in
-              the front-end web development world.
-            </p>
-          </div>
-        </section>
-        <hr class="m-0" />
       </div>
     </div>
+        
+    <!-- Footer -->
+    <div id="footer-01-placeholder"></div>
+    <script>
+      $(function () {
+        $("#footer-01-placeholder").load("footer_01.html");
+      });
+    </script>
+
   </body>
 </html>

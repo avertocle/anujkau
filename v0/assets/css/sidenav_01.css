@@ -1,7 +1,7 @@
 .side-nav-01 .nav {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0;
+  align-items: flex-start;
 }
 
 .side-nav-01 .navbar {
@@ -9,13 +9,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: left;
+  align-items: flex-start;
   width: 15rem;
-  text-align: left;
 }
 
 .side-nav-01 .navbar-ul-l0 {
-  display: block;
   list-style: none;
   text-align: left;
   padding: 0rem 1rem;
