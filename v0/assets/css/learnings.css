@@ -14,3 +14,9 @@
   color: var(--clr-post-text);
   font-size: small;
 }
+
+.b-example-divider {
+  max-width: 1px;
+  border-left: solid rgba(0, 0, 0, 0.15);
+  border-left-width: 1px;
+}

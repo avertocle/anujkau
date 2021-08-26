@@ -1,7 +1,11 @@
+.container {
+  min-height: 70vh;
+}
+
 .contact {
   align-items: center;
   text-align: justify;
-  margin: 2rem 10rem;
+  /* margin: 2rem 10rem; */
 }
 
 .contact h1 {
@@ -16,7 +20,7 @@
   background-color: var(--clr-contact-quote-bg);
   text-align: center;
   padding: 1rem;
-  margin: 5rem 0rem;
+  /* margin: 5rem 0rem; */
 }
 
 .contact .quote blockquote {
@@ -34,6 +38,7 @@
 
 .contact .cta {
   text-align: center;
+  align-items: center;
 }
 
 .contact .cta h2 {
@@ -57,10 +62,53 @@
   background-color: var(--clr-home-social-icons);
   border-color: var(--clr-home-social-icons) !important;
   border-radius: 1rem;
+  max-width: fit-content;
 }
 
 .intro-social-icons:hover {
   color: var(--clr-home-social-icons);
   background-color: #ffffff;
   border-color: black;
+}
+
+@media (min-width: 1200px) {
+  .row {
+    margin: 3rem 10rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .row {
+    margin: 3rem 8rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .row {
+    margin: 3rem 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    margin: 3rem 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .row {
+    margin: 3rem 1rem;
+  }
+  .contact .cta h2 {
+    font-size: 1.2rem;
+  }
+  .contact .cta p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .row {
+    margin: 3rem 0.5rem;
+  }
 }
