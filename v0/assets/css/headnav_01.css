@@ -1,18 +1,19 @@
 .head-nav-01 .navbar {
   position: static;
-  top: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
+  overflow: none;
 }
 
-.head-nav-01 .navbar-expand-sm .navbar-nav .nav-link {
-  padding: 0 20px;
+.head-nav-01 .navbar-expand .navbar-nav .nav-link {
+  padding: 0 1.5rem;
+}
+
+.head-nav-01 .navbar-expand {
+  justify-content: center;
 }
 
 .head-nav-01 .nav-link {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2rem;
   overflow: hidden;
 }
 
@@ -50,14 +51,22 @@
   background: var(--clr-heavnav-bg);
 }
 
-@media (max-width: 767px) {
-  .head-nav-01 .navbar-collapse {
-    background: var(--clr-heavnav-bg);
-    text-align: center;
-    padding-bottom: 20px;
+@media (max-width: 768px) {
+  .head-nav-01 .navbar-expand .navbar-nav .nav-link {
+    padding: 0 1rem;
   }
+  .head-nav-01 .nav-link {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
 
-  .head-nav-01 .navbar-expand-sm .navbar-nav .nav-link {
-    padding: 3px 20px;
+@media (max-width: 576px) {
+  .head-nav-01 .navbar-expand .navbar-nav .nav-link {
+    padding: 0 0.5rem;
+  }
+  .head-nav-01 .nav-link {
+    font-weight: bold;
+    font-size: 0.8rem;
   }
 }
