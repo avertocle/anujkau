@@ -1,7 +1,7 @@
 import OHuskyLogo from '../assets/ohusky_logo.png';
 import {NavbarButton} from "./SmallCommons.jsx";
-import {DefaultIcon} from "./Icons.jsx";
 import {AppName, AppSubHeading, AppVersion} from '../config/AppConfig.js';
+import {HomeIcon} from "@heroicons/react/24/outline/index.js";
 
 const NavBar = () => {
 
@@ -12,13 +12,13 @@ const NavBar = () => {
                     <p className="font-semibold">{AppName}</p>
                     <p className="">{AppSubHeading}</p>
                 </div>
-                {/*<div className="flex ml-10 gap-4 items-center ">*/}
-                {/*    <NavbarButton*/}
-                {/*        title="Home"*/}
-                {/*        icon={<DefaultIcon size={15} />}*/}
-                {/*        onClick={() => navigate('/')}*/}
-                {/*    />*/}
-                {/*</div>*/}
+                <div className="flex ml-10 gap-4 items-center ">
+                    <NavbarButton
+                        title="Home"
+                        icon={<HomeIcon className="h-5 w-5 text-white" />}
+                        onClick={() => navigate('/')}
+                    />
+                </div>
                 <div className="flex justify-center items-center gap-4 ml-auto">
                     <p className="font-extralight">{'v' + AppVersion}</p>
                 </div>

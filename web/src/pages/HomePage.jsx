@@ -1,7 +1,7 @@
 import UnderConstructionPage from './UnderConstructionPage.jsx';
 
-const ListingPage = () => {
+const HomePage = () => {
     return <UnderConstructionPage />;
 };
 
-export default ListingPage;
+export default HomePage;

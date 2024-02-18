@@ -4,7 +4,7 @@ export function NavbarButton({ title, icon, onClick, color }) {
     }
     return (
         <button
-            className={`${color} h-fit px-3 py-1 rounded-md flex items-center gap-1 active:scale-95`}
+            className={`${color} px-3 py-1 rounded-md flex items-center gap-1 active:scale-95`}
             onClick={onClick}
         >
             {icon}

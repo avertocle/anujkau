@@ -4,8 +4,9 @@ import ErrorPage from "./pages/ErrorPage.jsx";
 import LoginPage from "./pages/auth/LoginPage.jsx";
 import MainLayout from "./layouts/MainLayout.jsx";
 import {authCheckLoader} from "./utils/UserData.js";
-import ListingPage from "./pages/ListingPage.jsx";
-import DetailsPage from "./pages/DetailsPage.jsx";
+import TimelinePage from "./pages/TimelinePage.jsx";
+import BookmarksPage from "./pages/BookmarksPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 
 function App() {
 
@@ -47,15 +48,15 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Navigate replace to="/questions" />,
+                element: <HomePage/>,
             },
             {
-                path: '/questions',
-                element: <ListingPage />,
+                path: '/timeline',
+                element: <TimelinePage />,
             },
             {
-                path: '/question/:questionSlug',
-                element: <DetailsPage />,
+                path: '/bookmarks',
+                element: <BookmarksPage />,
             },
         ],
     },

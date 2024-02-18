@@ -1,7 +1,7 @@
 import UnderConstructionPage from './UnderConstructionPage.jsx';
 
-const DetailsPage = () => {
+const BookmarksPage = () => {
     return <UnderConstructionPage />;
 };
 
-export default DetailsPage;
+export default BookmarksPage;
