@@ -1,0 +1,58 @@
+section.about {
+  min-height: 70vh;
+}
+
+.intro-heading {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--clr-home-intro-heading);
+}
+
+.intro-heading-02 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--clr-theme-main);
+}
+
+.intro-text {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  color: var(--clr-home-intro-text);
+}
+
+.intro-social-icons {
+  background-color: var(--clr-home-social-icons);
+  border-color: var(--clr-home-social-icons) !important;
+  border-radius: 1rem;
+}
+
+.intro-social-icons:hover {
+  color: var(--clr-home-social-icons);
+  background-color: #ffffff;
+  border-color: black;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1080px) {
+}
+
+@media (max-width: 992px) {
+  section.about {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 580px) {
+}
+
+@media (max-width: 320px) {
+}

@@ -1,0 +1,20 @@
+{
+  "first_name": "Anuj",
+  "last_name": "Kaushik",
+  "full_name": "Anuj Kaushik",
+  "email": {
+    "display": "anuj [at] byteswan.com",
+    "url": "anuj@byteswan.com"
+  },
+  "github": {
+    "username": "@avertocle",
+    "url": "https://github.com/avertocle"
+  },
+  "linkedin": {
+    "username": "anujkau",
+    "url": "https://www.linkedin.com/in/anujkau"
+  },
+  "repo": {
+    "url": "https://github.com/avertocle/anujkau"
+  }
+}
