@@ -1,33 +1,42 @@
-import OHuskyLogo from '../assets/ohusky_logo.png';
-import {NavbarButton} from "./SmallCommons.jsx";
-import {AppName, AppSubHeading, AppVersion} from '../config/AppConfig.js';
-import {HomeIcon} from "@heroicons/react/24/outline/index.js";
+import {BookmarkIcon, CommandLineIcon, HomeIcon} from "@heroicons/react/24/outline/index.js";
+import {useNavigate} from "react-router-dom";
 
 const NavBar = () => {
+    const navigate = useNavigate()
 
     return (
-            <div className="flex gap-2 w-full p-2 items-center bg-primary text-white border-b-2 border-accent">
-                <img src={OHuskyLogo} alt="" className="w-[40px] h-[40px]" />
-                <div className="flex flex-col justify-center">
-                    <p className="font-semibold">{AppName}</p>
-                    <p className="">{AppSubHeading}</p>
-                </div>
-                <div className="flex ml-10 gap-4 items-center ">
-                    <NavbarButton
-                        title="Home"
-                        icon={<HomeIcon className="h-5 w-5 text-white" />}
-                        onClick={() => navigate('/')}
-                    />
-                </div>
-                <div className="flex justify-center items-center gap-4 ml-auto">
-                    <p className="font-extralight">{'v' + AppVersion}</p>
-                </div>
+        <div className="flex gap-2 w-full p-4 text-white border-b border-primary bg-primary">
+            <div className="flex w-full gap-4 justify-center ">
+                <NavbarButton
+                    title="Bookmarks"
+                    icon={<BookmarkIcon className="h-5 w-5 text-white"/>}
+                    onClick={() => navigate('/bookmarks')}
+                />
+                <NavbarButton
+                    title="Home"
+                    icon={<HomeIcon className="h-5 w-5 text-white"/>}
+                    onClick={() => navigate('/')}
+                />
+                <NavbarButton
+                    title="Timeline"
+                    icon={<CommandLineIcon className="h-5 w-5 text-white"/>}
+                    onClick={() => navigate('/timeline')}
+                />
             </div>
+        </div>
     );
 };
 
-export function sanitizeQueryResult(queryResult) {
-    return queryResult ? queryResult.data : {};
+export function NavbarButton({title, icon, onClick}) {
+    return (
+        <button
+            className={`px-3 py-1 rounded-md flex items-center gap-1 hover:scale-95`}
+            onClick={onClick}
+        >
+            {icon}
+            {title}
+        </button>
+    );
 }
 
 export default NavBar;
