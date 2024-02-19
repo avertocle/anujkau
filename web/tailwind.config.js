@@ -11,6 +11,7 @@ export default {
         secondary: '#32E0C4',
         tertiary: '#C7FFD8',
         accent: '#0e0eaf',
+        content: '#333333',
       },
     },
   },

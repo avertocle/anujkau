@@ -5,21 +5,21 @@ const NavBar = () => {
     const navigate = useNavigate()
 
     return (
-        <div className="flex gap-2 w-full p-4 text-white border-b border-primary bg-primary">
-            <div className="flex w-full gap-4 justify-center ">
+        <div className="flex gap-2 w-full h-fit p-4 text-white bg-primary">
+            <div className="flex w-full gap-4 justify-center">
                 <NavbarButton
                     title="Bookmarks"
-                    icon={<BookmarkIcon className="h-5 w-5 text-white"/>}
+                    icon={<BookmarkIcon className="flex h-5 w-5 text-white"/>}
                     onClick={() => navigate('/bookmarks')}
                 />
                 <NavbarButton
                     title="Home"
-                    icon={<HomeIcon className="h-5 w-5 text-white"/>}
+                    icon={<HomeIcon className="flex h-5 w-5 text-white"/>}
                     onClick={() => navigate('/')}
                 />
                 <NavbarButton
                     title="Timeline"
-                    icon={<CommandLineIcon className="h-5 w-5 text-white"/>}
+                    icon={<CommandLineIcon className="flex h-5 w-5 text-white"/>}
                     onClick={() => navigate('/timeline')}
                 />
             </div>
@@ -30,7 +30,7 @@ const NavBar = () => {
 export function NavbarButton({title, icon, onClick}) {
     return (
         <button
-            className={`px-3 py-1 rounded-md flex items-center gap-1 hover:scale-95`}
+            className={`flex px-4 py-2 gap-1 items-center hover:font-semibold`}
             onClick={onClick}
         >
             {icon}
