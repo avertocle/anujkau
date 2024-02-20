@@ -4,7 +4,7 @@ import Footer from "../components/Footer.jsx";
 
 const MainLayout = () => {
     return (
-        <div className="flex flex-col w-[70%] h-[calc(100vh-10px)] bg-white">
+        <div className="flex flex-col w-[75%] h-[calc(100vh-10px)] bg-white px-10">
             <div className="flex w-full">
                 <NavBar/>
             </div>

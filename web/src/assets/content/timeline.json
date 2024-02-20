@@ -1,0 +1,258 @@
+[
+  {
+    "time": {
+      "start": "2016-01-01",
+      "end": "2016-12-31",
+      "duration": "1 yr"
+    },
+    "theme": {
+      "color": "green-700"
+    },
+    "company": {
+      "name": "Moonfrog Labs",
+      "location": "Bangalore, India",
+      "logo": "../companies/moonfrog.png"
+    },
+    "progression": [
+      "SSE",
+      "EM"
+    ],
+    "stack": [
+      "GoLang",
+      "Redshift",
+      "AWS",
+      "NodeJS",
+      "Cocos2Dx",
+      "Unity2D"
+    ],
+    "short_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+    },
+    "long_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Kumar Puspesh",
+        "title": "Co-Founder/CTO, Moonfrog Labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Ankit Jain",
+        "title": "Co-Founder, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Sumit Mehra",
+        "title": "Head Of Operations, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "2016-01-01",
+      "end": "2016-12-31",
+      "duration": "1 yr"
+    },
+    "theme": {
+      "color": "green-700"
+    },
+    "company": {
+      "name": "Moonfrog Labs",
+      "location": "Bangalore, India",
+      "logo": "../companies/moonfrog.png"
+    },
+    "progression": [
+      "SSE",
+      "EM"
+    ],
+    "stack": [
+      "GoLang",
+      "Redshift",
+      "AWS",
+      "NodeJS",
+      "Cocos2Dx",
+      "Unity2D"
+    ],
+    "short_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+    },
+    "long_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Kumar Puspesh",
+        "title": "Co-Founder/CTO, Moonfrog Labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Ankit Jain",
+        "title": "Co-Founder, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Sumit Mehra",
+        "title": "Head Of Operations, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "2016-01-01",
+      "end": "2016-12-31",
+      "duration": "1 yr"
+    },
+    "theme": {
+      "color": "green-700"
+    },
+    "company": {
+      "name": "Moonfrog Labs",
+      "location": "Bangalore, India",
+      "logo": "../companies/moonfrog.png"
+    },
+    "progression": [
+      "SSE",
+      "EM"
+    ],
+    "stack": [
+      "GoLang",
+      "Redshift",
+      "AWS",
+      "NodeJS",
+      "Cocos2Dx",
+      "Unity2D"
+    ],
+    "short_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+    },
+    "long_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Kumar Puspesh",
+        "title": "Co-Founder/CTO, Moonfrog Labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Ankit Jain",
+        "title": "Co-Founder, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Sumit Mehra",
+        "title": "Head Of Operations, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "2016-01-01",
+      "end": "2016-12-31",
+      "duration": "1 yr"
+    },
+    "theme": {
+      "color": "green-700"
+    },
+    "company": {
+      "name": "Moonfrog Labs",
+      "location": "Bangalore, India",
+      "logo": "../companies/moonfrog.png"
+    },
+    "progression": [
+      "SSE",
+      "EM"
+    ],
+    "stack": [
+      "GoLang",
+      "Redshift",
+      "AWS",
+      "NodeJS",
+      "Cocos2Dx",
+      "Unity2D"
+    ],
+    "short_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+    },
+    "long_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Kumar Puspesh",
+        "title": "Co-Founder/CTO, Moonfrog Labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Ankit Jain",
+        "title": "Co-Founder, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      },
+      {
+        "name": "Sumit Mehra",
+        "title": "Head Of Operations, Moonfrog labs",
+        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+      }
+    ]
+  }
+]
