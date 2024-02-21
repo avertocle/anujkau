@@ -1,15 +1,16 @@
 import {useState} from "react";
+import {SvgIcon} from "./SmallCommons.jsx";
+import CompanyLogos from "../assets/companies/CompanyImages.js"
 
 function TimelinePanel(props) {
     const [collapsed, setCollapsed] = useState(true)
 
     function toggleCollapsed() {
         setCollapsed(!collapsed)
-        console.log(collapsed)
     }
 
     let childData = {
-        data: props.data,
+        content: props.data,
         handlers: {
             toggle_collapsed: toggleCollapsed
         }
@@ -27,45 +28,73 @@ export default TimelinePanel;
 function TimelineCardExpanded(props) {
     let data = props.data
     return (
-        <div
-            className="flex flex-col w-full p-4 gap-4 border border-primary border-opacity-25 rounded-md cursor-pointer"
-        >
-            <TimelineCardHeader data={data}/>
-            <div
-                className="flex flex-col w-full p-4 gap-4 border border-primary border-opacity-25 rounded-md cursor-pointer"
-                onClick={props.data.handlers.toggle_collapsed}
-            >
-
-            </div>
-
-        </div>
+        <TimelineCardLayout data={data}>Expanded</TimelineCardLayout>
     )
 }
 
 function TimelineCardCollapsed(props) {
+    let data = props.data
+    let content = props.data.content
+    let theme = props.data.content.theme
+    let companyTheme = {
+        text: `text-${theme.color}`,
+        border: `border-${theme.color}`,
+        bg: `bg-${theme.color}`
+    }
+    return (
+        <TimelineCardLayout data={data} theme={companyTheme}>
+            <div className="flex flex-col gap-4">
+                <div className="flex gap-4 w-full">
+                    <SvgIcon
+                        src={CompanyLogos[content.company.logo]}
+                        alt={'logos'}
+                        className={`flex p-2 w-24 h-12 rounded-md border ${companyTheme.border} border-opacity-20`}/>
+                    <div>
+                        <p className={`flex ${companyTheme.text} text-lg`}>{content.company.name}</p>
+                        <div className="flex gap-4 font-extralight italic text-xs">
+                            <p>{content.company.location}</p>
+                            <p>{content.progression.join(' / ')}</p>
+                        </div>
+                    </div>
+                </div>
+                <p className="flex w-full text-start text-content mt-2">{content.short_desc.text}</p>
+            </div>
+        </TimelineCardLayout>
+    )
+}
+
+
+function TimelineCardLayout(props) {
     return (
         <div
-            className="flex w-full p-4 gap-4 border border-primary border-opacity-50 rounded-md cursor-pointer"
-            onClick={props.data.handlers.toggle_collapsed}
+            className="flex flex-col w-full p-4 border-opacity-25 rounded-b-md cursor-pointer"
         >
-            <TimelineCardHeader data={data}/>
-
-
+            <TimelineCardHeader data={props.data} theme={props.theme}/>
+            <div
+                className={`flex flex-col w-full p-4 gap-4 border ${props.theme.border} border-opacity-25 rounded-md cursor-pointer`}
+                onClick={props.data.handlers.toggle_collapsed}
+            >
+                {props.children}
+            </div>
         </div>
     )
 }
 
+
 function TimelineCardHeader(props) {
     let data = props.data
     return (
-        <div className="flex min-w-[40%] p-2 justify-between">
-            <div>
-                <p>{data.time.duration}</p>
-            </div>
-            <div className="flex gap-2">
-                <p>{data.time.start}</p>
-                <p>"-"</p>
-                <p>{data.time.end}</p>
+        <div className="flex w-full justify-end">
+            <div
+                className={`flex w-fit px-4 py-1 justify-between  ${props.theme.bg} rounded-t-md text-white text-xs`}>
+                <div className={"mr-10"}>
+                    <p>{data.content.time.duration}</p>
+                </div>
+                <div className="flex gap-2">
+                    <p>{data.content.time.start}</p>
+                    <p>-</p>
+                    <p>{data.content.time.end}</p>
+                </div>
             </div>
         </div>
     )
