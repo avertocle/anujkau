@@ -6,7 +6,7 @@ function TimelinePage() {
     const timelineData = TimelineData
     return (
         <div className="flex flex-col w-full">
-            <TimelineHeader/>
+            {/*<TimelineHeader/>*/}
             {TimelineData.map((data, index) => {
                 return <TimelinePanel data={data} key={`tl-${index}`}/>
             })}

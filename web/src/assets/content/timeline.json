@@ -6,7 +6,7 @@
       "duration": "5yr 3m"
     },
     "theme": {
-      "color": "green-700"
+      "color": "green"
     },
     "company": {
       "name": "Moonfrog Labs",
@@ -47,18 +47,13 @@
     ],
     "references": [
       {
-        "name": "Kumar Puspesh",
-        "title": "Co-Founder/CTO, Moonfrog Labs",
+        "name": "Ravi Bhushan",
+        "title": "CPTO, Proptiger/Makaan",
         "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
       },
       {
-        "name": "Ankit Jain",
-        "title": "Co-Founder, Moonfrog labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
-      },
-      {
-        "name": "Sumit Mehra",
-        "title": "Head Of Operations, Moonfrog labs",
+        "name": "Azitabh Ajit",
+        "title": "Engineering Manager, Proptiger/Makaan",
         "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
       }
     ]
@@ -70,7 +65,7 @@
       "duration": "2yr 2m"
     },
     "theme": {
-      "color": "amber-700"
+      "color": "amber"
     },
     "company": {
       "name": "Proptiger",
@@ -82,12 +77,11 @@
       "EM"
     ],
     "stack": [
-      "GoLang",
+      "Java",
+      "MySql",
+      "Apache Solar",
       "Redshift",
-      "AWS",
-      "NodeJS",
-      "Cocos2Dx",
-      "Unity2D"
+      "AWS"
     ],
     "short_desc": {
       "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
@@ -129,35 +123,33 @@
   },
   {
     "time": {
-      "start": "Jan 2016",
-      "end": "Dec 2016",
-      "duration": "1 yr"
+      "start": "Mar 2013",
+      "end": "Apr 2016",
+      "duration": "3yr 2m"
     },
     "theme": {
-      "color": "green-700"
+      "color": "cyan"
     },
     "company": {
-      "name": "Moonfrog Labs",
-      "location": "Bangalore, India",
-      "logo": "../companies/moonfrog.png"
+      "name": "Exarb Innovations [now Cogmac Technologies]",
+      "location": "Bangalore, NCR, India",
+      "logo": "CogmacLogo"
     },
     "progression": [
-      "SSE",
-      "EM"
+      "Co-Founder"
     ],
     "stack": [
-      "GoLang",
-      "Redshift",
-      "AWS",
-      "NodeJS",
-      "Cocos2Dx",
-      "Unity2D"
+      "Java",
+      "AWT/Swing",
+      "C",
+      "JS (Vanilla)",
+      "JQuery"
     ],
     "short_desc": {
-      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+      "text": "Cogmac is a software development company based out of NCR, India. I was part of the core team, working on the product development and the client projects."
     },
     "long_desc": {
-      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+      "text": "Cogmac is a software development company based out of NCR, India. I was part of the core team, working on the product development and the client projects. I was responsible for the product development, which was written in Java and JS. I also worked on the client projects, which were written in Java, C and JS."
     },
     "works": [
       {
@@ -175,53 +167,44 @@
     ],
     "references": [
       {
-        "name": "Kumar Puspesh",
-        "title": "Co-Founder/CTO, Moonfrog Labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+        "name": "Rajendu Mitra",
+        "title": "Co-Founder/CEO, Cogmac Technologies",
+        "linkedin": "https://www.linkedin.com/in/rajendu-mitra-496a0034/"
       },
       {
-        "name": "Ankit Jain",
-        "title": "Co-Founder, Moonfrog labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
-      },
-      {
-        "name": "Sumit Mehra",
-        "title": "Head Of Operations, Moonfrog labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+        "name": "Hari Gupta",
+        "title": "Co-Founder/CTO, Cogmac Technologies",
+        "linkedin": ""
       }
     ]
   },
   {
     "time": {
-      "start": "Jan 2016",
-      "end": "Dec 2016",
-      "duration": "1 yr"
+      "start": "Jul 2011",
+      "end": "Feb 2013",
+      "duration": "1yr 8m"
     },
     "theme": {
-      "color": "green-700"
+      "color": "purple"
     },
     "company": {
-      "name": "Moonfrog Labs",
+      "name": "Citrix Systems",
       "location": "Bangalore, India",
-      "logo": "../companies/moonfrog.png"
+      "logo": "CitrixLogo"
     },
     "progression": [
-      "SSE",
-      "EM"
+      "SE1",
+      "SE2"
     ],
     "stack": [
-      "GoLang",
-      "Redshift",
-      "AWS",
-      "NodeJS",
-      "Cocos2Dx",
-      "Unity2D"
+      "C",
+      "FreeBSD"
     ],
     "short_desc": {
-      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+      "text": "Citrix Systems is a multinational software company based out of Bangalore, India. I was part of the core team, working on the product development and the client projects."
     },
     "long_desc": {
-      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+      "text": "Citrix Systems is a multinational software company based out of Bangalore, India. I was part of the core team, working on the product development and the client projects. I was responsible for the product development, which was written in C and FreeBSD. I also worked on the client projects, which were written in C and FreeBSD."
     },
     "works": [
       {
@@ -239,19 +222,9 @@
     ],
     "references": [
       {
-        "name": "Kumar Puspesh",
-        "title": "Co-Founder/CTO, Moonfrog Labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
-      },
-      {
-        "name": "Ankit Jain",
-        "title": "Co-Founder, Moonfrog labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
-      },
-      {
-        "name": "Sumit Mehra",
-        "title": "Head Of Operations, Moonfrog labs",
-        "linkedin": " https://www.linkedin.com/in/ankit-jain-3b3b3b3b"
+        "name": "Manikam M",
+        "title": "Sr Principal Engineer, Citrix Systems",
+        "linkedin": "https://www.linkedin.com/in/manikam-m-5204a54/"
       }
     ]
   }
