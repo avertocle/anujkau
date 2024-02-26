@@ -25,3 +25,4 @@ export function SecondaryButton({label, onClick, color}) {
 export function SvgIcon({src, alt, className}) {
     return <img src={src} alt={alt} className={className}/>
 }
+

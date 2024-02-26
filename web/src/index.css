@@ -23,8 +23,8 @@ body {
     height: 100%;
     overflow: hidden;
     width: 100vw;
-    background-image: url('../public/background_03.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-image: url('/background_03.png');*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }

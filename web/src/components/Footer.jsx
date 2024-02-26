@@ -5,9 +5,9 @@ import ContactData from "../assets/content/contact.json";
 
 const Footer = () => {
     return (
-        <div className="flex gap-4 w-full p-2 items-center text-white bg-primary">
+        <div
+            className="flex gap-4 w-full p-2 items-center text-content text-opacity-70 text-xs border-t border-content border-opacity-30">
             <MadeWithPanel/>
-            <VersionPanel/>
         </div>
     );
 };
@@ -16,32 +16,33 @@ export default Footer;
 
 function MadeWithPanel() {
     return (
-        <div className="flex gap-2 w-full justify-center items-center text-white text-xs">
-            <div className="flex gap-2">
-                <p className="">{'Cooked with'}</p>
+        <div className="grid grid-cols-4 w-full divide-x divide-content">
+            <MadeWithPanelTile title="Cooked with">
                 <SiReact className=""/>
                 <SiTailwindcss className=""/>
                 <SiVite className=""/>
-            </div>
-            <div className="flex mx-4 px-4 gap-2 border-x">
-                <p className="">{'Served with'}</p>
+            </MadeWithPanelTile>
+            <MadeWithPanelTile title="Served with">
                 <SiCloudflare className=""/>
-                <p>Cloudflare</p>
-            </div>
-            <div className="flex gap-2">
-                <p className="">{'Recipe at'}</p>
+            </MadeWithPanelTile>
+            <MadeWithPanelTile title="Recipe at">
                 <a href={ContactData.repo.url} target={"_blank"}>
                     <SiGithub className=""/>
                 </a>
-            </div>
+            </MadeWithPanelTile>
+            <MadeWithPanelTile title="Version">
+                <p className="">{AppVersion}</p>
+            </MadeWithPanelTile>
         </div>
     );
 }
 
-function VersionPanel() {
-    return (
-        <div className="flex gap-2 w-fit justify-center items-center text-white text-xs">
-            <p className="">{'v' + AppVersion}</p>
+function MadeWithPanelTile({title, children}) {
+    return (<div className="flex flex-col gap-1 items-center">
+        <p className="">{title}</p>
+        <div className="flex gap-2 justify-center">
+            {children}
         </div>
-    );
+    </div>)
 }
+
