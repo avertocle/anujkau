@@ -5,13 +5,13 @@ import {SectionLayout} from "../layouts/SectionLayout.jsx";
 
 const HomePage = () => {
     return (
-        <div className="flex flex-col gap-10 w-full pt-2">
+        <div className="flex flex-col gap-10 w-full pt-2 px-4">
             <HomeIntro/>
             <div className="flex gap-6">
                 <HomeIntro/>
                 <HomeIntro/>
             </div>
-            <div className="flex w-full mt-auto">
+            <div className="flex w-full">
                 <SocialsPanel/>
             </div>
         </div>
@@ -53,13 +53,13 @@ function SocialsPanel() {
 function SocialCard({icon, text, link}) {
     return (
         <div
-            className="flex flex-col items-center gap-0.5 lg:gap-2 p-1 lg:p-2 cursor-pointer hover:bg-primary hover:bg-opacity-10 rounded-md"
+            className="flex flex-col items-center gap-0.5 lg:gap-2 p-1 lg:p-2 cursor-pointer hover:bg-accent hover:bg-opacity-20 rounded-md"
             onClick={() => window.open(link, '_blank')}
         >
-            <div className="flex w-10 h-8">
+            <div className="flex w-10 h-8 text-accent">
                 {icon}
             </div>
-            <p className="flex items-end pb-0.5 text-content">{text}</p>
+            <p className="flex items-end pb-0.5 text-xs">{text}</p>
         </div>
     );
 }

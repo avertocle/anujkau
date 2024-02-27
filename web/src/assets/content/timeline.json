@@ -24,10 +24,10 @@
       "Godot"
     ],
     "short_desc": {
-      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+      "text": "I work as a software engineering consultant with early stage startups in all stages of engineering hierarchy : coding, hiring, execution, people management, whatever it takes."
     },
     "long_desc": {
-      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+      "text": "I work as a software engineering consultant with early stage startups in all stages of engineering hierarchy : coding, hiring, execution, people management, whatever it takes."
     },
     "works": [
       {
