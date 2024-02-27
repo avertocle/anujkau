@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {SvgIcon} from "./SmallCommons.jsx";
 import CompanyLogos from "../assets/companies/CompanyImages.js"
-import {GetHeaderStyleByThemeColor} from "./CompanyThemeHelpers.jsx";
+import {GetCardStyleByThemeColor, GetHeaderStyleByThemeColor} from "./CompanyThemeHelpers.jsx";
 
 function TimelinePanel(props) {
     const [collapsed, setCollapsed] = useState(true)
@@ -46,15 +46,15 @@ function TimelineCardExpanded(props) {
                     </div>
                 </div>
                 <p className="flex w-full text-start text-content mt-2">{content.long_desc.text}</p>
-                <WorksPanel works={content.works} />
-                <ReferencesPanel references={content.references} />
+                <WorksPanel works={content.works}/>
+                <ReferencesPanel references={content.references}/>
             </div>
         </TimelineCardLayout>
     )
 }
 
-function ReferencesPanel({references}){
-   return (
+function ReferencesPanel({references}) {
+    return (
         <div>
             <p>References</p>
             <div className='flex flex-col gap-2 p-4'>
@@ -66,7 +66,7 @@ function ReferencesPanel({references}){
     )
 }
 
-function ReferenceCard(props){
+function ReferenceCard(props) {
     let reference = props.data
     return (
         <div className='flex flex-col gap-2 p-4'>
@@ -87,7 +87,7 @@ function WorksPanel({works}) {
     )
 }
 
-function WorkCard(props){
+function WorkCard(props) {
     let work = props.data
     return (
         <div className='flex flex-col gap-2 p-4'>
@@ -102,7 +102,7 @@ function TimelineCardCollapsed(props) {
     let data = props.data
     let content = props.data.content
     let theme = props.data.content.theme
-    let companyTheme = { ...theme}
+    let companyTheme = {...theme}
     return (
         <TimelineCardLayout data={data} theme={companyTheme}>
             <div className="flex flex-col gap-4">
@@ -127,14 +127,14 @@ function TimelineCardCollapsed(props) {
 
 
 function TimelineCardLayout(props) {
+    let cardTheme = GetCardStyleByThemeColor(props.theme.color)
     return (
         <div
             className="flex flex-col w-full p-4 border-opacity-25 rounded-b-md cursor-pointer"
         >
             <TimelineCardHeader data={props.data} theme={props.theme}/>
             <div
-                className={`flex flex-col w-full p-4 gap-4 border 
-                        ${props.theme.border} ${props.theme.bg} border-opacity-25 rounded-md cursor-pointer`}
+                className={`flex flex-col w-full p-4 gap-4 rounded-md cursor-pointer ${cardTheme}`}
                 onClick={props.data.handlers.toggle_collapsed}
             >
                 {props.children}
