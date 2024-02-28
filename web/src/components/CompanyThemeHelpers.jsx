@@ -18,7 +18,7 @@ export function GetHeaderStyleByThemeColor(themeColor) {
 }
 
 
-export function GetCardStyleByThemeColor(themeColor) {
+export function GetBgByThemeColor(themeColor) {
     switch (themeColor) {
         case 'green':
             return 'bg-green-700/5'
@@ -34,5 +34,24 @@ export function GetCardStyleByThemeColor(themeColor) {
             return 'bg-purple-700/5'
         default:
             return 'bg-gray-700/5'
+    }
+}
+
+export function GetTextByThemeColor(themeColor) {
+    switch (themeColor) {
+        case 'green':
+            return 'text-green-700'
+        case 'cyan':
+            return 'text-cyan-700'
+        case 'amber':
+            return 'text-amber-600'
+        case 'yellow':
+            return 'text-yellow-600'
+        case 'gray':
+            return 'text-gray-700'
+        case 'purple':
+            return 'text-purple-700'
+        default:
+            return 'text-gray-700'
     }
 }

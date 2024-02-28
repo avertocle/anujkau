@@ -6,6 +6,7 @@ import Aurva from './aurva.png';
 import Aasthy from './aasthy.png';
 import Durianpay from './durianpay.svg';
 import Mydoco from './mydoco.png';
+import Byteswan from './byteswan.png';
 
 export default {
     MoonfrogLogo: Moonfrog,
@@ -16,4 +17,5 @@ export default {
     AasthyLogo: Aasthy,
     DurianpayLogo: Durianpay,
     MydocoLogo: Mydoco,
+    ByteswanLogo : Byteswan,
 }
