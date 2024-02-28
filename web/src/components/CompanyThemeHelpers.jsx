@@ -7,7 +7,7 @@ export function GetHeaderStyleByThemeColor(themeColor) {
         case 'amber':
             return 'flex w-fit px-4 py-1 justify-between bg-amber-600 rounded-t-md text-white text-xs'
         case 'yellow':
-            return 'flex w-fit px-4 py-1 justify-between bg-yellow-700 rounded-t-md text-white text-xs'
+            return 'flex w-fit px-4 py-1 justify-between bg-yellow-600 rounded-t-md text-white text-xs'
         case 'gray':
             return 'flex w-fit px-4 py-1 justify-between bg-gray-700 rounded-t-md text-white text-xs'
         case 'purple':
@@ -27,7 +27,7 @@ export function GetCardStyleByThemeColor(themeColor) {
         case 'amber':
             return 'bg-amber-600/5'
         case 'yellow':
-            return 'bg-yellow-700/5'
+            return 'bg-yellow-500/10'
         case 'gray':
             return 'bg-gray-700/5'
         case 'purple':
