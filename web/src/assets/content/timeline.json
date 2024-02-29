@@ -44,6 +44,9 @@
         "short_desc": {
           "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
         },
+        "long_desc": {
+          "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
@@ -81,14 +84,17 @@
           "color": "purple"
         },
         "company": {
-          "name": "Doco",
+          "name": "MyDoco",
           "location": "Remote",
-          "logo": "DocoLogo"
+          "logo": "MydocoLogo"
         },
         "progression": [
           "Software Engineer"
         ],
         "short_desc": {
+          "text": "Doco is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
+        "long_desc": {
           "text": "Doco is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
         },
         "works": [
@@ -138,6 +144,9 @@
         "short_desc": {
           "text": "Durianpay is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
         },
+        "long_desc": {
+          "text": "Durianpay is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
@@ -185,6 +194,9 @@
         "short_desc": {
           "text": "Aasthy is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
         },
+        "long_desc": {
+          "text": "Aasthy is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
@@ -214,23 +226,26 @@
       },
       {
         "time": {
-          "start": "Nov 2023",
-          "end": "Present",
-          "duration": "4m"
+          "start": "Jan 2021",
+          "end": "June 2021",
+          "duration": "6m"
         },
         "theme": {
           "color": "yellow"
         },
         "company": {
-          "name": "Aurva",
+          "name": "Multiple Companies",
           "location": "Bangalore, India",
-          "logo": "AurvaLogo"
+          "logo": ""
         },
         "progression": [
-          "Head Of Engineering"
+          "Consultant"
         ],
         "short_desc": {
-          "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": "Worked with multiple companies as a consultant, helping them with the engineering team, working on the product development and the client projects."
+        },
+        "long_desc": {
+          "text": "Worked with multiple companies as a consultant, helping them with the engineering team, working on the product development and the client projects."
         },
         "works": [
           {
@@ -246,65 +261,7 @@
             "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
           }
         ],
-        "references": [
-          {
-            "name": "Apurv Garg",
-            "title": "Co-Founder, Aurva",
-            "linkedin": "https://www.linkedin.com/in/apurvgarg"
-          },
-          {
-            "name": "Krishna Bagadia",
-            "title": "Co-Founder, Aurva",
-            "linkedin": "https://www.linkedin.com/in/krishna-bagadia"
-          }
-        ]
-      },
-      {
-        "time": {
-          "start": "Nov 2023",
-          "end": "Present",
-          "duration": "4m"
-        },
-        "theme": {
-          "color": "yellow"
-        },
-        "company": {
-          "name": "Aurva",
-          "location": "Bangalore, India",
-          "logo": "AurvaLogo"
-        },
-        "progression": [
-          "Head Of Engineering"
-        ],
-        "short_desc": {
-          "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
-        },
-        "works": [
-          {
-            "text": "Worked on the game server, which was written in GoLang"
-          },
-          {
-            "text": "Worked on the analytics pipeline, which was written in NodeJS"
-          },
-          {
-            "text": "Worked on the data warehouse, which was built on top of Redshift"
-          },
-          {
-            "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
-          }
-        ],
-        "references": [
-          {
-            "name": "Apurv Garg",
-            "title": "Co-Founder, Aurva",
-            "linkedin": "https://www.linkedin.com/in/apurvgarg"
-          },
-          {
-            "name": "Krishna Bagadia",
-            "title": "Co-Founder, Aurva",
-            "linkedin": "https://www.linkedin.com/in/krishna-bagadia"
-          }
-        ]
+        "references": []
       }
     ]
   },

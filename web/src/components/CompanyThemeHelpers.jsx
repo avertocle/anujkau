@@ -1,19 +1,25 @@
-export function GetHeaderStyleByThemeColor(themeColor) {
+export function GetHeaderBgByThemeColor(themeColor) {
     switch (themeColor) {
         case 'green':
-            return 'flex w-fit px-4 py-1 justify-between bg-green-700 rounded-t-md text-white text-xs'
+            return 'bg-green-700'
+        case 'blue':
+            return 'bg-blue-500'
         case 'cyan':
-            return 'flex w-fit px-4 py-1 justify-between bg-cyan-700 rounded-t-md text-white text-xs'
+            return 'bg-cyan-700'
         case 'amber':
-            return 'flex w-fit px-4 py-1 justify-between bg-amber-600 rounded-t-md text-white text-xs'
+            return 'bg-amber-600'
         case 'yellow':
-            return 'flex w-fit px-4 py-1 justify-between bg-yellow-600 rounded-t-md text-white text-xs'
+            return 'bg-yellow-500'
         case 'gray':
-            return 'flex w-fit px-4 py-1 justify-between bg-gray-700 rounded-t-md text-white text-xs'
+            return 'bg-gray-700'
         case 'purple':
-            return 'flex w-fit px-4 py-1 justify-between bg-purple-700 rounded-t-md text-white text-xs'
+            return 'bg-purple-700'
+        case 'pink':
+            return 'bg-pink-700'
+        case 'teal':
+            return 'bg-teal-700'
         default:
-            return 'flex w-fit px-4 py-1 justify-between bg-gray-700 rounded-t-md text-white text-xs'
+            return 'bg-gray-700'
     }
 }
 
@@ -22,6 +28,8 @@ export function GetBgByThemeColor(themeColor) {
     switch (themeColor) {
         case 'green':
             return 'bg-green-700/5'
+        case 'blue':
+            return 'bg-blue-500/10'
         case 'cyan':
             return 'bg-cyan-700/5'
         case 'amber':
@@ -32,6 +40,10 @@ export function GetBgByThemeColor(themeColor) {
             return 'bg-gray-700/5'
         case 'purple':
             return 'bg-purple-700/5'
+        case 'pink':
+            return 'bg-pink-700/5'
+        case 'teal':
+            return 'bg-teal-700/5'
         default:
             return 'bg-gray-700/5'
     }
@@ -41,6 +53,8 @@ export function GetTextByThemeColor(themeColor) {
     switch (themeColor) {
         case 'green':
             return 'text-green-700'
+        case 'blue':
+            return 'text-blue-500'
         case 'cyan':
             return 'text-cyan-700'
         case 'amber':
@@ -51,6 +65,10 @@ export function GetTextByThemeColor(themeColor) {
             return 'text-gray-700'
         case 'purple':
             return 'text-purple-700'
+        case 'pink':
+            return 'text-pink-700/5'
+        case 'teal':
+            return 'text-teal-700/5'
         default:
             return 'text-gray-700'
     }

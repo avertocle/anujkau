@@ -1,6 +1,6 @@
 import {useState} from "react";
-import {ConsultingPanelExpanded} from "./timeline/ConsultingJobPanels.jsx";
-import {RegularJobPanelExpanded} from "./timeline/RegularJobPanels.jsx";
+import {ConsultingJobPanel} from "./timeline/ConsultingJobPanel.jsx";
+import {RegularJobPanel} from "./timeline/RegularJobPanel.jsx";
 import {JobPanelCollapsed} from "./timeline/BaseJobPanels.jsx";
 
 function TimelinePanel(props) {
@@ -12,6 +12,7 @@ function TimelinePanel(props) {
 
     let childData = {
         content: props.data,
+        isCollapsed: collapsed,
         handlers: {
             toggle_collapsed: toggleCollapsed
         }
@@ -20,10 +21,10 @@ function TimelinePanel(props) {
     function getPanelType(collapsed, type) {
         if (collapsed) {
             return <JobPanelCollapsed data={childData}/>
-        }else if (type === "consulting") {
-            return <ConsultingPanelExpanded data={childData}/>
+        } else if (type === "consulting") {
+            return <ConsultingJobPanel data={childData}/>
         } else {
-            return <RegularJobPanelExpanded data={childData}/>
+            return <RegularJobPanel data={childData}/>
         }
     }
 

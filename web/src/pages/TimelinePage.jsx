@@ -5,7 +5,7 @@ import {FaTimeline} from "react-icons/fa6";
 function TimelinePage() {
     const timelineData = TimelineData
     return (
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full gap-10">
             {/*<TimelineHeader/>*/}
             {TimelineData.map((data, index) => {
                 return <TimelinePanel data={data} key={`tl-${index}`}/>
