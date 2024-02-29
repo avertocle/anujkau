@@ -1,0 +1,443 @@
+[
+  {
+    "type": "consulting",
+    "time": {
+      "start": "Jan 2021",
+      "end": "Present",
+      "duration": "3yr 3m"
+    },
+    "theme": {
+      "color": "pink"
+    },
+    "company": {
+      "name": "Byteswan",
+      "location": "Bangalore, India",
+      "logo": "ByteswanLogo"
+    },
+    "progression": [
+      "Owner"
+    ],
+    "short_desc": {
+      "text": "I work as a software engineering consultant with early stage startups in all stages of engineering hierarchy : coding, hiring, execution, people management, whatever it takes."
+    },
+    "long_desc": {
+      "text": "I work as a software engineering consultant with early stage startups in all stages of engineering hierarchy : coding, hiring, execution, people management, whatever it takes."
+    },
+    "gigs": [
+      {
+        "time": {
+          "start": "Nov 2023",
+          "end": "Present",
+          "duration": "4m"
+        },
+        "theme": {
+          "color": "blue"
+        },
+        "company": {
+          "name": "Aurva",
+          "location": "Bangalore, India",
+          "logo": "AurvaLogo",
+          "commitment": "Full Time"
+        },
+        "progression": [
+          "Head Of Engineering"
+        ],
+        "short_desc": {
+          "text": ""
+        },
+        "long_desc": {
+          "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
+        "works": [
+          {
+            "text": "Worked on the game server, which was written in GoLang"
+          }
+        ],
+        "references": [
+          {
+            "name": "Apurv Garg",
+            "title": "Co-Founder, Aurva",
+            "linkedin": "https://www.linkedin.com/in/apurvgarg"
+          },
+          {
+            "name": "Krishna Bagadia",
+            "title": "Co-Founder, Aurva",
+            "linkedin": "https://www.linkedin.com/in/krishna-bagadia"
+          }
+        ]
+      },
+      {
+        "time": {
+          "start": "April 2023",
+          "end": "Oct 2023",
+          "duration": "6m"
+        },
+        "theme": {
+          "color": "purple"
+        },
+        "company": {
+          "name": "MyDoco",
+          "location": "Remote",
+          "logo": "MydocoLogo",
+          "commitment": "Full Time"
+        },
+        "progression": [
+          "Software Engineer"
+        ],
+        "short_desc": {
+          "text": ""
+        },
+        "long_desc": {
+          "text": "Doco is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
+        "works": [
+          {
+            "text": "Worked on the game server, which was written in GoLang"
+          }
+        ],
+        "references": [
+          {
+            "name": "Bhoopendra Singh",
+            "title": "Co-Founder, Doco",
+            "linkedin": "https://www.linkedin.com/in/singhbhoopendra"
+          }
+        ]
+      },
+      {
+        "time": {
+          "start": "Dec 2021",
+          "end": "Dec 2022",
+          "duration": "1y"
+        },
+        "theme": {
+          "color": "rose"
+        },
+        "company": {
+          "name": "Durianpay",
+          "location": "Remote",
+          "logo": "DurianpayLogo",
+          "commitment": "Full Time"
+        },
+        "progression": [
+          "Head Of Engineering"
+        ],
+        "short_desc": {
+          "text": ""
+        },
+        "long_desc": {
+          "text": "Durianpay is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
+        "works": [
+          {
+            "text": "Worked on the game server, which was written in GoLang"
+          }
+        ],
+        "references": [
+          {
+            "name": "Kumar Puspesh",
+            "title": "Co-Founder, Durianpay",
+            "linkedin": "https://www.linkedin.com/in/puspesh"
+          },
+          {
+            "name": "Antara Sara Mathai",
+            "title": "Co-Founder, Durianpay",
+            "linkedin": "https://www.linkedin.com/in/antara-sara-mathai-01a0195"
+          }
+        ]
+      },
+      {
+        "time": {
+          "start": "Aug 2021",
+          "end": "Dec 2021",
+          "duration": "5m"
+        },
+        "theme": {
+          "color": "purple"
+        },
+        "company": {
+          "name": "Aasthy",
+          "location": "Bangalore, India",
+          "logo": "AasthyLogo",
+          "commitment": "Full Time"
+        },
+        "progression": [
+          "Engineering Manager"
+        ],
+        "short_desc": {
+          "text": ""
+        },
+        "long_desc": {
+          "text": "Aasthy is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+        },
+        "works": [
+          {
+            "text": "Worked on the game server, which was written in GoLang"
+          }
+        ],
+        "references": [
+          {
+            "name": "Srinath Ramanujan",
+            "title": "Co-Founder, Aasthy",
+            "linkedin": "https://www.linkedin.com/in/srinathramanujan/"
+          }
+        ]
+      },
+      {
+        "time": {
+          "start": "Jan 2021",
+          "end": "June 2021",
+          "duration": "6m"
+        },
+        "theme": {
+          "color": "yellow"
+        },
+        "company": {
+          "name": "Multiple Companies",
+          "location": "Bangalore, India",
+          "logo": "",
+          "commitment": "Consultant, Part Time"
+        },
+        "progression": [
+          "Consultant"
+        ],
+        "short_desc": {
+          "text": ""
+        },
+        "long_desc": {
+          "text": "Worked with multiple companies as a consultant, helping them with the engineering team, working on the product development and the client projects."
+        },
+        "works": [
+          {
+            "text": "Worked on the game server, which was written in GoLang"
+          }
+        ],
+        "references": []
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "Sep 2016",
+      "end": "Dec 2020",
+      "duration": "4yr 3m"
+    },
+    "theme": {
+      "color": "green"
+    },
+    "company": {
+      "name": "Moonfrog Labs",
+      "location": "Bangalore, India",
+      "logo": "MoonfrogLogo"
+    },
+    "progression": [
+      "SSE",
+      "EM"
+    ],
+    "stack": [
+      "GoLang",
+      "Redshift",
+      "AWS",
+      "NodeJS",
+      "Cocos2Dx",
+      "Unity2D"
+    ],
+    "short_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+    },
+    "long_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Kumar Puspesh",
+        "title": "Co-Founder, Moonfrog Labs",
+        "linkedin": "https://www.linkedin.com/in/puspesh"
+      },
+      {
+        "name": "Ankit Jain",
+        "title": "Co-Founder, Moonfrog labs",
+        "linkedin": "https://www.linkedin.com/in/anksoft"
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "May 2014",
+      "end": "July 2016",
+      "duration": "2yr 2m"
+    },
+    "theme": {
+      "color": "amber"
+    },
+    "company": {
+      "name": "Proptiger",
+      "location": "Bangalore, India",
+      "logo": "ProptigerLogo"
+    },
+    "progression": [
+      "SE",
+      "SSE"
+    ],
+    "stack": [
+      "Java",
+      "MySql",
+      "Apache Solar",
+      "Redshift",
+      "AWS"
+    ],
+    "short_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline."
+    },
+    "long_desc": {
+      "text": "Moonfrog Labs is a mobile gaming startup based out of Bangalore, India. I was part of the backend team, working on the game server and the analytics pipeline. I was responsible for the game server, which was written in GoLang, and the analytics pipeline, which was written in NodeJS. I also worked on the data warehouse, which was built on top of Redshift. I also worked on the game client, which was written in Cocos2Dx and Unity2D."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Ravi Bhushan",
+        "title": "CPTO, Proptiger/Makaan",
+        "linkedin": "https://www.linkedin.com/in/ravibk"
+      },
+      {
+        "name": "Azitabh Ajit",
+        "title": "Engineering Manager, Proptiger/Makaan",
+        "linkedin": "https://www.linkedin.com/in/azitabh/"
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "Mar 2013",
+      "end": "Apr 2016",
+      "duration": "3yr 2m"
+    },
+    "theme": {
+      "color": "cyan"
+    },
+    "company": {
+      "name": "Exarb Innovations",
+      "subname": "now Cogmac Technologies",
+      "location": "Bangalore, NCR, India",
+      "logo": "CogmacLogo"
+    },
+    "progression": [
+      "Co-Founder"
+    ],
+    "stack": [
+      "Java",
+      "AWT/Swing",
+      "C",
+      "JS (Vanilla)",
+      "JQuery"
+    ],
+    "short_desc": {
+      "text": "Cogmac is a software development company based out of NCR, India. I was part of the core team, working on the product development and the client projects."
+    },
+    "long_desc": {
+      "text": "Cogmac is a software development company based out of NCR, India. I was part of the core team, working on the product development and the client projects. I was responsible for the product development, which was written in Java and JS. I also worked on the client projects, which were written in Java, C and JS."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Rajendu Mitra",
+        "title": "Co-Founder/CEO, Cogmac Technologies",
+        "linkedin": "https://www.linkedin.com/in/rajendu-mitra-496a0034/"
+      },
+      {
+        "name": "Hari Gupta",
+        "title": "Co-Founder/CTO, Cogmac Technologies",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "time": {
+      "start": "Jul 2011",
+      "end": "Feb 2013",
+      "duration": "1yr 8m"
+    },
+    "theme": {
+      "color": "purple"
+    },
+    "company": {
+      "name": "Citrix Systems",
+      "location": "Bangalore, India",
+      "logo": "CitrixLogo"
+    },
+    "progression": [
+      "SE1",
+      "SE2"
+    ],
+    "stack": [
+      "C",
+      "FreeBSD"
+    ],
+    "short_desc": {
+      "text": "Citrix Systems is a multinational software company based out of Bangalore, India. I was part of the core team, working on the product development and the client projects."
+    },
+    "long_desc": {
+      "text": "Citrix Systems is a multinational software company based out of Bangalore, India. I was part of the core team, working on the product development and the client projects. I was responsible for the product development, which was written in C and FreeBSD. I also worked on the client projects, which were written in C and FreeBSD."
+    },
+    "works": [
+      {
+        "text": "Worked on the game server, which was written in GoLang"
+      },
+      {
+        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+      },
+      {
+        "text": "Worked on the data warehouse, which was built on top of Redshift"
+      },
+      {
+        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+      }
+    ],
+    "references": [
+      {
+        "name": "Manikam M",
+        "title": "Sr. Engineering Manager, Citrix Systems",
+        "linkedin": "https://www.linkedin.com/in/manikam-m-5204a54/"
+      }
+    ]
+  }
+]
