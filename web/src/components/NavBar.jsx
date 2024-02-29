@@ -6,7 +6,7 @@ const NavBar = () => {
     const path = useLocation()
 
     return (
-        <div className="flex gap-2 w-full h-fit p-4 text-primary bg-accent/5">
+        <div className="flex gap-2 w-full p-4 text-primary bg-accent/5">
             <div className="flex w-full gap-4 justify-center text-accent">
                 <NavbarButton
                     title="Bookmarks"

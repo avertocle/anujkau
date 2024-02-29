@@ -2,7 +2,7 @@ import {SiLinkedin} from "react-icons/si";
 
 export default function ReferencesPanel({references}) {
     return (
-        <div className='flex flex-col w-full items-center lg:flex-row lg:gap-10 lg:justify-center'>
+        <div className='flex w-full items-center gap-10 justify-center'>
             {references.map((reference, index) => {
                 return <ReferenceCard reference={reference} key={`reference-${index}`}/>
             })}
@@ -10,7 +10,7 @@ export default function ReferencesPanel({references}) {
     )
 }
 
-function ReferenceCard({reference}) {
+export function ReferenceCard({reference}) {
     return (
         <div className='flex flex-col gap-1 p-2 hover:bg-accent/20 rounded-md'
              onClick={() => window.open(reference.link, '_blank')}

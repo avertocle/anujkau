@@ -4,6 +4,7 @@ import TimelinePanel from "../TimelinePanel.jsx";
 import WorkSummaryPanel from "./WorkSummaryPanel.jsx";
 import ReferencesPanel from "./ReferencesPanel.jsx";
 import {useState} from "react";
+import GigJobPanel from "./GigJobPanel.jsx";
 
 export function ConsultingJobPanel(props) {
     let data = props.data
@@ -20,50 +21,18 @@ export function ConsultingJobPanel(props) {
         <JobPanelLayout data={data} theme={content.theme}>
             <div className="flex flex-col gap-8">
                 <JobIntroSection content={content} isCollapsed={false}/>
-                {/*<div className="flex w-full gap-8">*/}
-                {/*    <div className="flex w-[30%]">*/}
-                {/*        <GigListingPanel gigs={gigs} onSelectGig={handleGigSelected}/>*/}
-                {/*    </div>*/}
-                {/*    <div className="flex w-[70%]">*/}
-                {/*        <GigDetailsPanel gig={selectedGig}/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <GigsPanel gigs={content.gigs} theme={content.theme}/>
             </div>
         </JobPanelLayout>
     )
 }
 
-function GigListingPanel({gigs}) {
-    return (
-        <div className='flex flex-col w-full py-4 gap-4'>
-            {gigs.map((gig, index) => {
-                return <GigListingCard gig={gig} key={`gig-listing-${index}`}/>
-            })}
-        </div>
-    )
-}
-
-function GigListingCard({gig}) {
-
-}
-
-function GigDetailsPanel({gigs}) {
-    return (
-        <div className='flex flex-col w-full py-4 gap-4'>
-            {gigs.map((gig, index) => {
-                return <GigListingCard gig={gig} key={`gig-listing-${index}`}/>
-            })}
-        </div>
-    )
-}
-
 
 function GigsPanel(props) {
     return (
-        <div className='flex flex-col w-full py-4 gap-4'>
+        <div className='flex flex-col w-full py-4 gap-8'>
             {props.gigs.map((gig, index) => {
-                return <TimelinePanel data={gig} theme={props.theme} key={`gig-${index}`}/>
+                return <GigJobPanel data={gig} key={`gig-${index}`}/>
             })}
         </div>
     )

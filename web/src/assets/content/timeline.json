@@ -7,7 +7,7 @@
       "duration": "3yr 3m"
     },
     "theme": {
-      "color": "yellow"
+      "color": "pink"
     },
     "company": {
       "name": "Byteswan",
@@ -36,13 +36,14 @@
         "company": {
           "name": "Aurva",
           "location": "Bangalore, India",
-          "logo": "AurvaLogo"
+          "logo": "AurvaLogo",
+          "commitment": "Full Time"
         },
         "progression": [
           "Head Of Engineering"
         ],
         "short_desc": {
-          "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": ""
         },
         "long_desc": {
           "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
@@ -50,15 +51,6 @@
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
-          },
-          {
-            "text": "Worked on the analytics pipeline, which was written in NodeJS"
-          },
-          {
-            "text": "Worked on the data warehouse, which was built on top of Redshift"
-          },
-          {
-            "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
           }
         ],
         "references": [
@@ -86,13 +78,14 @@
         "company": {
           "name": "MyDoco",
           "location": "Remote",
-          "logo": "MydocoLogo"
+          "logo": "MydocoLogo",
+          "commitment": "Full Time"
         },
         "progression": [
           "Software Engineer"
         ],
         "short_desc": {
-          "text": "Doco is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": ""
         },
         "long_desc": {
           "text": "Doco is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
@@ -100,15 +93,6 @@
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
-          },
-          {
-            "text": "Worked on the analytics pipeline, which was written in NodeJS"
-          },
-          {
-            "text": "Worked on the data warehouse, which was built on top of Redshift"
-          },
-          {
-            "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
           }
         ],
         "references": [
@@ -116,11 +100,6 @@
             "name": "Bhoopendra Singh",
             "title": "Co-Founder, Doco",
             "linkedin": "https://www.linkedin.com/in/singhbhoopendra"
-          },
-          {
-            "name": "Krishna Bagadia",
-            "title": "Co-Founder, Aurva",
-            "linkedin": "https://www.linkedin.com/in/krishna-bagadia"
           }
         ]
       },
@@ -131,18 +110,19 @@
           "duration": "1y"
         },
         "theme": {
-          "color": "orange"
+          "color": "rose"
         },
         "company": {
           "name": "Durianpay",
           "location": "Remote",
-          "logo": "DurianpayLogo"
+          "logo": "DurianpayLogo",
+          "commitment": "Full Time"
         },
         "progression": [
           "Head Of Engineering"
         ],
         "short_desc": {
-          "text": "Durianpay is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": ""
         },
         "long_desc": {
           "text": "Durianpay is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
@@ -150,15 +130,6 @@
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
-          },
-          {
-            "text": "Worked on the analytics pipeline, which was written in NodeJS"
-          },
-          {
-            "text": "Worked on the data warehouse, which was built on top of Redshift"
-          },
-          {
-            "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
           }
         ],
         "references": [
@@ -186,13 +157,14 @@
         "company": {
           "name": "Aasthy",
           "location": "Bangalore, India",
-          "logo": "AasthyLogo"
+          "logo": "AasthyLogo",
+          "commitment": "Full Time"
         },
         "progression": [
-          "Consultant"
+          "Engineering Manager"
         ],
         "short_desc": {
-          "text": "Aasthy is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": ""
         },
         "long_desc": {
           "text": "Aasthy is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
@@ -200,15 +172,6 @@
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
-          },
-          {
-            "text": "Worked on the analytics pipeline, which was written in NodeJS"
-          },
-          {
-            "text": "Worked on the data warehouse, which was built on top of Redshift"
-          },
-          {
-            "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
           }
         ],
         "references": [
@@ -216,11 +179,6 @@
             "name": "Srinath Ramanujan",
             "title": "Co-Founder, Aasthy",
             "linkedin": "https://www.linkedin.com/in/srinathramanujan/"
-          },
-          {
-            "name": "Narayan Lal",
-            "title": "Co-Founder, Aasthy",
-            "linkedin": "https://www.linkedin.com/in/narayan-lal/"
           }
         ]
       },
@@ -236,13 +194,14 @@
         "company": {
           "name": "Multiple Companies",
           "location": "Bangalore, India",
-          "logo": ""
+          "logo": "",
+          "commitment": "Consultant, Part Time"
         },
         "progression": [
           "Consultant"
         ],
         "short_desc": {
-          "text": "Worked with multiple companies as a consultant, helping them with the engineering team, working on the product development and the client projects."
+          "text": ""
         },
         "long_desc": {
           "text": "Worked with multiple companies as a consultant, helping them with the engineering team, working on the product development and the client projects."
@@ -250,15 +209,6 @@
         "works": [
           {
             "text": "Worked on the game server, which was written in GoLang"
-          },
-          {
-            "text": "Worked on the analytics pipeline, which was written in NodeJS"
-          },
-          {
-            "text": "Worked on the data warehouse, which was built on top of Redshift"
-          },
-          {
-            "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
           }
         ],
         "references": []
@@ -321,11 +271,6 @@
         "name": "Ankit Jain",
         "title": "Co-Founder, Moonfrog labs",
         "linkedin": "https://www.linkedin.com/in/anksoft"
-      },
-      {
-        "name": "Sumit Mehra",
-        "title": "Head Of Operations, Moonfrog labs",
-        "linkedin": "https://www.linkedin.com/in/sumitmehra"
       }
     ]
   },
@@ -344,8 +289,8 @@
       "logo": "ProptigerLogo"
     },
     "progression": [
-      "SSE",
-      "EM"
+      "SE",
+      "SSE"
     ],
     "stack": [
       "Java",

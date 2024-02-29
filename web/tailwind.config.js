@@ -8,7 +8,16 @@ export default {
         extend: {
             colors: {
                 primary: '#000000',
-                accent: '#016756',
+                accent: '#01a48a',
+                comblue: '#016756',
+                comgreen: '#016756',
+                comred: '#016756',
+                comorange: '#016756',
+                comyellow: '#016756',
+                compink: '#016756',
+                compurple: '#016756',
+                comcyan: '#016756',
+                comteal: '#016756',
             },
         },
     },

@@ -5,13 +5,13 @@ import Footer from "../components/Footer.jsx";
 const MainLayout = () => {
     return (
         <div className="flex flex-col lg:w-[60%] h-[calc(100vh)] bg-opacity-0 text-sm">
-            <div className="flex w-full h-[100px]">
+            <div className="flex w-full h-[80px]">
                 <NavBar/>
             </div>
-            <main className="flex w-full h-[calc(100vh-150px)] overflow-y-scroll">
+            <main className="flex w-full mt-10 pr-4 h-[calc(100vh-180px)] overflow-y-scroll bg-">
                 <Outlet/>
             </main>
-            <div className="flex w-full h-[50px] mt-auto">
+            <div className="flex w-full h-[80px] mt-auto">
                 <Footer/>
             </div>
         </div>

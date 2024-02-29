@@ -8,7 +8,7 @@ export function RegularJobPanel(props) {
     let isCollapsed = props.data.isCollapsed
     return (
         <JobPanelLayout data={data} theme={content.theme} isCollapsed={isCollapsed}>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
                 <JobIntroSection content={content} isCollapsed={false}/>
                 <JobSectionLayout title="Work Summary" theme={content.theme}>
                     <WorkSummaryPanel works={content.works} theme={content.theme}/>

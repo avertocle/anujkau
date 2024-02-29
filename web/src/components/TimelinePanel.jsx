@@ -4,7 +4,7 @@ import {RegularJobPanel} from "./timeline/RegularJobPanel.jsx";
 import {JobPanelCollapsed} from "./timeline/BaseJobPanels.jsx";
 
 function TimelinePanel(props) {
-    const [collapsed, setCollapsed] = useState(true)
+    const [collapsed, setCollapsed] = useState(false)
 
     function toggleCollapsed() {
         setCollapsed(!collapsed)
