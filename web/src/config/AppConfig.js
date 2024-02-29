@@ -1,4 +1,4 @@
-export const AppVersion = '0.0.1';
+export const AppVersion = '0.0.2';
 export const AppName = "";
 export const AppSubHeading = "";
 

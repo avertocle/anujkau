@@ -13,7 +13,7 @@ import {SvgIcon} from "../SmallCommons.jsx";
 import CompanyLogos from "../../assets/companies/CompanyImages.js";
 
 export default function GigJobPanel(props) {
-    const [collapsed, setCollapsed] = useState(false)
+    const [collapsed, setCollapsed] = useState(true)
 
     function toggleCollapsed() {
         setCollapsed(!collapsed)
