@@ -25,9 +25,9 @@ export function JobPanelLayout(props) {
     let bgColor = GetBgByThemeColor(props.theme.color)
     let onClickExpand = props.data.handlers.toggle_collapsed
     return (
-        <div className="flex flex-col w-full">
+        <div className={`flex flex-col w-full h-fit pl-4 pb-4 gap-2 rounded-b-md rounded-t-md ${bgColor}`}>
             <JobTimeChip time={time} theme={theme}/>
-            <div className={`flex flex-col w-full p-4 gap-4 rounded-md ${bgColor}`}>
+            <div className="flex flex-col pr-4 gap-4">
                 {props.children}
                 <JobExpandChip isCollapsed={isCollapsed} theme={theme} onClick={onClickExpand}/>
             </div>
@@ -51,7 +51,7 @@ export function JobHeaderSection({content, theme}) {
         <div className="flex gap-4 w-full justify-between">
             <div className="flex flex-col gap-1">
                 <p className={`flex ${textColor} text-lg`}>{content.company.name}</p>
-                <div className="flex gap-4 font-extralight italic text-xs">
+                <div className="flex gap-4 font-extralight text-xs">
                     <ProgressionChip progression={content.progression} theme={theme}/>
                     <p>{content.company.location}</p>
                 </div>
@@ -82,10 +82,11 @@ export function JobExpandChip({isCollapsed, theme, onClick}) {
     let textColor = GetTextByThemeColor(theme.color)
     let borderColor = GetBorderByThemeColor(theme.color)
     return (
-        <div className="flex mt-auto w-full justify-center  cursor-pointer"
+        <div className="flex mt-auto w-full justify-end cursor-pointer"
              onClick={onClick}
         >
-            <div className={`flex w-fit px-4 py-0.5 text-xs font-light ${textColor} border ${borderColor} border-opacity-50 rounded-md`}>
+            <div
+                className={`flex w-fit px-4 py-0.5 text-xs font-light ${textColor} border ${borderColor} border-opacity-50 rounded-md`}>
                 <p>{isCollapsed ? "... More ..." : "... Less ..."}</p>
             </div>
         </div>
@@ -97,11 +98,11 @@ export function JobTimeChip({time, theme}) {
     return (
         <div className="flex w-full justify-end">
             <div
-                className={`flex w-fit px-4 py-1 justify-between ${bgColor} rounded-t-md text-white text-xs`}>
-                <div className={"mr-10"}>
+                className={`flex w-fit px-4 py-1 justify-between ${bgColor} rounded-bl-md rounded-tr-md text-white text-xs`}>
+                <div className={"mr-10 font-semibold"}>
                     <p>{time.duration}</p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 font-light">
                     <p>{time.start}</p>
                     <p>-</p>
                     <p>{time.end}</p>
@@ -111,11 +112,11 @@ export function JobTimeChip({time, theme}) {
     )
 }
 
-export function ProgressionChip({progression, theme}){
+export function ProgressionChip({progression, theme}) {
     let borderColor = GetBorderByThemeColor(theme.color)
     let bgColor = GetHeaderBgByThemeColor(theme.color)
     return (
-        <div className={`px-2 py-0.5 ${bgColor} text-white text-xs rounded-md`}>
+        <div className={`px-2 py-0.5 ${bgColor} text-white text-xs font-normal rounded-md`}>
             <p>{progression.join(' -> ')}</p>
         </div>
     )
