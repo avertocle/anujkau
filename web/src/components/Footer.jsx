@@ -6,7 +6,7 @@ import ContactData from "../assets/content/contact.json";
 const Footer = () => {
     return (
         <div
-            className="flex gap-4 w-full p-2 items-center text-primary text-xs bg-accent/5 aborder-t border-accent">
+            className="flex gap-4 w-full p-2 items-center text-primary text-xs bg-accent aborder-t border-accent rounded-md">
             <MadeWithPanel/>
         </div>
     );
@@ -16,7 +16,7 @@ export default Footer;
 
 function MadeWithPanel() {
     return (
-        <div className="grid grid-cols-4 w-full divide-x divide-content opacity-70">
+        <div className="grid grid-cols-4 w-full divide-x divide-content ">
             <MadeWithPanelTile title="Cooked with">
                 <SiReact className=""/>
                 <SiTailwindcss className=""/>
@@ -39,9 +39,9 @@ function MadeWithPanel() {
 
 function MadeWithPanelTile({title, children}) {
     return (
-        <div className="flex flex-col gap-1 items-center">
+        <div className="flex flex-col gap-1 items-center text-stone-400">
             <p className="">{title}</p>
-            <div className="flex gap-2 justify-center text-accent">
+            <div className="flex gap-2 justify-center">
                 {children}
             </div>
         </div>

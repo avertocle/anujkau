@@ -1,13 +1,6 @@
-import {
-    JobExpandChip,
-    ProgressionChip
-} from "./BaseJobPanels.jsx";
+import {JobExpandChip, ProgressionChip} from "./BaseJobPanels.jsx";
 import {ReferenceCard} from "./ReferencesPanel.jsx";
-import {
-    GetBgByThemeColor,
-    GetHeaderBgByThemeColor,
-    GetTextByThemeColor
-} from "../CompanyThemeHelpers.jsx";
+import {GetBgByThemeColor, GetHeaderBgByThemeColor, GetTextByThemeColor} from "../CompanyThemeHelpers.jsx";
 import {useState} from "react";
 import {SvgIcon} from "../SmallCommons.jsx";
 import CompanyLogos from "../../assets/companies/CompanyImages.js";
@@ -33,7 +26,7 @@ export default function GigJobPanel(props) {
         <GigPanelLayout data={childData}>
             <div className="flex flex-col gap-6">
                 <GigHeaderSection content={content} theme={content.theme}/>
-                { !collapsed &&
+                {!collapsed &&
                     <div className={`flex flex-col w-full gap-2 font-light`}>
                         <p>{content.long_desc.text}</p>
                         <div className='flex flex-col w-full'>
@@ -73,56 +66,37 @@ function GigPanelLayout(props) {
     )
 }
 
-export function GigSectionLayout({title, children, theme}) {
-    let bgColor = GetBgByThemeColor(theme.color)
-    let textColor = GetTextByThemeColor(theme.color)
-    return (
-        <div className={`flex flex-col gap-4 py-2 w-full justify-center items-center`}>
-            {/*<p className={`w-full text-center px-2 ${textColor}`}>~ {title} ~</p>*/}
-            {children}
-        </div>
-    )
-}
-
-
-export function GigIntroSection({content, isCollapsed}) {
-    let text = isCollapsed ? content.short_desc.text : content.long_desc.text
-    return (
-        <div className="flex flex-col gap-2">
-        </div>
-    )
-}
-
 export function GigHeaderSection({content, theme}) {
     let textColor = GetTextByThemeColor(theme.color)
     return (
         <div className="flex gap-4 w-full justify-between">
             <div className="flex flex-col gap-1">
-                <p className={`flex ${textColor} text-lg`}>{content.company.name}</p>
-                <div className="flex gap-4 font-extralight italic text-xs">
-                    <ProgressionChip progression={content.progression} theme={theme}/>
-                    <GigCommitmentChip text={content.company.commitment}/>
-                    <p>{content.company.location}</p>
+                <div className="flex gap-4 items-center">
+                    <SvgIcon
+                        src={CompanyLogos[content.company.logo]}
+                        alt={'logos'}
+                        className={`flex max-w-20 max-h-6 rounded-md`}/>
                 </div>
-            </div>
-            <div className="flex items-end">
-            <SvgIcon
-                    src={CompanyLogos[content.company.logo]}
-                    alt={'logos'}
-                    className={`flex max-w-30 max-h-8 rounded-md`}/>
+                <div className="flex gap-2 font-extralight items-center">
+                    <p className={`${textColor}`}>{content.company.name}</p>
+                    <p className={""}>{content.company.commitment}</p>
+                    <p className={""}>{content.company.location}</p>
+                </div>
+                <div>
+                    <ProgressionChip progression={content.progression} theme={theme}/>
+                </div>
             </div>
         </div>
     )
 }
 
-function GigCommitmentChip({text}){
+function GigCommitmentChip({text}) {
     return (
         <div className="">
             <p>{text}</p>
         </div>
     )
 }
-
 
 
 export function GigTimeChip({time, theme}) {

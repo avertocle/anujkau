@@ -8,7 +8,7 @@ export default {
         extend: {
             colors: {
                 primary: '#000000',
-                accent: '#01a48a',
+                accent: '#005d4e',
                 comblue: '#016756',
                 comgreen: '#016756',
                 comred: '#016756',
@@ -23,7 +23,6 @@ export default {
     },
     plugins: [],
 }
-
 
 
 // primary: '#00947b',
