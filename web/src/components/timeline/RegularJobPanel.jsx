@@ -1,13 +1,18 @@
-import {JobIntroSection, JobPanelLayout, JobSectionLayout} from "./BaseJobPanels.jsx";
+import {JobIntroSection, JobPanelCollapsed, JobPanelLayout, JobSectionLayout} from "./BaseJobPanels.jsx";
 import WorkSummaryPanel from "./WorkSummaryPanel.jsx";
 import ReferencesPanel from "./ReferencesPanel.jsx";
 
-export function RegularJobPanel(props) {
-    let data = props.data
-    let content = props.data.content
-    let isCollapsed = props.data.isCollapsed
+export function RegularJobPanel({content, isCollapsed, onClickSelect}) {
     return (
-        <JobPanelLayout data={data} theme={content.theme} isCollapsed={isCollapsed}>
+        isCollapsed ?
+            <JobPanelCollapsed content={content} onClickSelect={onClickSelect}/>
+            : <RegularJobPanelExpanded content={content} isCollapsed={isCollapsed} onClickSelect={onClickSelect}/>
+    )
+}
+
+function RegularJobPanelExpanded({content, isCollapsed, onClickSelect}) {
+    return (
+        <JobPanelLayout content={content} isCollapsed={isCollapsed} onClickSelect={onClickSelect}>
             <div className="flex flex-col w-full gap-4">
                 <JobIntroSection content={content} isCollapsed={false}/>
                 <JobSectionLayout title="Work Summary" theme={content.theme}>

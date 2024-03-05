@@ -7,9 +7,7 @@ import GigJobPanel from "./GigJobPanel.jsx";
 import {SvgIcon} from "../SmallCommons.jsx";
 import CompanyLogos from "../../assets/companies/CompanyImages.js";
 
-export function ConsultingJobPanel(props) {
-    let data = props.data
-    let content = props.data.content
+export function ConsultingJobPanel({content, isCollapsed, onClickSelect}) {
     const [selectedGigIdx, setSelectedGigIdx] = useState(0)
     const gigs = content.gigs
     const selectedGig = gigs[selectedGigIdx]
@@ -19,7 +17,7 @@ export function ConsultingJobPanel(props) {
     }
 
     return (
-        <JobPanelLayout data={data} theme={content.theme}>
+        <JobPanelLayout content={content} isCollapsed={isCollapsed} onClickSelect={onClickSelect}>
             <div className="flex flex-col gap-8">
                 <JobIntroSection content={content} isCollapsed={false}/>
                 <GigsPanel gigs={content.gigs} theme={content.theme}/>

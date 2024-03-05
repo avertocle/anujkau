@@ -1,4 +1,4 @@
-import { redirect } from 'react-router-dom';
+import {redirect} from 'react-router-dom';
 
 const storeKey = 'user_data';
 const storeDataDefault = {
@@ -6,11 +6,11 @@ const storeDataDefault = {
         user_id: null,
     },
     tokens: {
-            access: {
-                value: null,
-                expiry: null,
-            }
-            },
+        access: {
+            value: null,
+            expiry: null,
+        }
+    },
 };
 
 export class StoreManager {

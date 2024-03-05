@@ -17,5 +17,5 @@ export default {
     AasthyLogo: Aasthy,
     DurianpayLogo: Durianpay,
     MydocoLogo: Mydoco,
-    ByteswanLogo : Byteswan,
+    ByteswanLogo: Byteswan,
 }

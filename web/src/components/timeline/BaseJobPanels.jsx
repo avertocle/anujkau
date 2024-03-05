@@ -7,29 +7,25 @@ import {
 import {SvgIcon} from "../SmallCommons.jsx";
 import CompanyLogos from "../../assets/companies/CompanyImages.js";
 
-export function JobPanelCollapsed(props) {
-    let data = props.data
-    let content = props.data.content
-    let theme = props.data.content.theme
+export function JobPanelCollapsed({content, onClickSelect}) {
     return (
-        <JobPanelLayout data={data} theme={theme}>
+        <JobPanelLayout content={content} isCollapsed={true} onClickSelect={onClickSelect}>
             <JobIntroSection content={content} isCollapsed={true}/>
         </JobPanelLayout>
     )
 }
 
-export function JobPanelLayout(props) {
-    let isCollapsed = props.data.isCollapsed
-    let time = props.data.content.time
-    let theme = props.theme
-    let bgColor = GetBgByThemeColor(props.theme.color)
-    let onClickExpand = props.data.handlers.toggle_collapsed
+export function JobPanelLayout({content, isCollapsed, onClickSelect, children}) {
+    let time = content.time
+    let theme = content.theme
+    let bgColor = GetBgByThemeColor(theme.color)
+    console.log(onClickSelect)
     return (
         <div className={`flex flex-col w-full h-fit pl-4 pb-4 gap-2 rounded-b-md rounded-t-md ${bgColor}`}>
             <JobTimeChip time={time} theme={theme}/>
             <div className="flex flex-col pr-4 gap-4">
-                {props.children}
-                <JobExpandChip isCollapsed={isCollapsed} theme={theme} onClick={onClickExpand}/>
+                {children}
+                {onClickSelect && <JobExpandChip isCollapsed={isCollapsed} theme={theme} onClick={onClickSelect}/>}
             </div>
         </div>
     )

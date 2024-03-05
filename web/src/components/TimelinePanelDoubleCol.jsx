@@ -3,7 +3,7 @@ import {ConsultingJobPanel} from "./timeline/ConsultingJobPanel.jsx";
 import {RegularJobPanel} from "./timeline/RegularJobPanel.jsx";
 import {JobPanelCollapsed} from "./timeline/BaseJobPanels.jsx";
 
-function TimelinePanelSingleCol(props) {
+function TimelinePanelDoubleCol(props) {
     const [expandedIdx, setExpandedIdx] = useState(-1);
 
     function handleSelectTile(index) {
@@ -25,7 +25,7 @@ function TimelinePanelSingleCol(props) {
             key: `single-col-job-card-${index}`
         }
         if (isCollapsed) {
-            return <JobPanelCollapsed {...childData} />
+            return <JobPanelCollapsed {...childData}/>
         } else if (type === "consulting") {
             return <ConsultingJobPanel {...childData}/>
         } else {
@@ -40,16 +40,10 @@ function TimelinePanelSingleCol(props) {
             })}
         </div>
     )
-}
-
-export default TimelinePanelSingleCol;
-
-
-function TimelineGigPanel(props) {
 
 }
 
-
+export default TimelinePanelDoubleCol;
 
 
 
