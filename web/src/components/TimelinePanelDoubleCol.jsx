@@ -1,42 +1,42 @@
-import { useState } from 'react';
-import { ConsultingJobPanel } from './timeline/ConsultingJobPanel.jsx';
-import { RegularJobPanel } from './timeline/RegularJobPanel.jsx';
-import { JobPanelCollapsed } from './timeline/BaseJobPanels.jsx';
+import {ConsultingJobPanel} from './timeline/ConsultingJobPanel.jsx';
+import {RegularJobPanel} from './timeline/RegularJobPanel.jsx';
+import {useState} from "react";
 
-function TimelinePanelDoubleCol(props) {
-  const [expandedIdx, setExpandedIdx] = useState(-1);
+function TimelinePanelSingleCol(props) {
+    const [expandedIndex, setExpandedIndex] = useState(0);
 
-  function handleSelectTile(index) {
-    if (expandedIdx === index) {
-      setExpandedIdx(-1);
-    } else {
-      setExpandedIdx(index);
+    function getListingPanel(index) {
+        const content = props.data[index];
+        const {type} = content;
+
+        const childData = {
+            content: content,
+            isCollapsedOrig: !(expandedIndex === index),
+            onClickSelect: (() => {
+                setExpandedIndex(index)
+            }),
+            onToggleCollapsed: (() => {
+            }),
+            canExpandInPlace: false,
+            key: `single-col-job-card-${index}`,
+        };
+        if (type === 'consulting') {
+            return <ConsultingJobPanel {...childData} />;
+        }
+        return <RegularJobPanel {...childData} />;
     }
-  }
 
-  function getPanel(index) {
-    const content = props.data[index];
-    const isCollapsed = !(expandedIdx === index);
-    const { type } = content;
-    const childData = {
-      content,
-      isCollapsed,
-      onClickSelect: (() => handleSelectTile(index)),
-      key: `single-col-job-card-${index}`,
-    };
-    if (isCollapsed) {
-      return <JobPanelCollapsed {...childData} />;
-    } if (type === 'consulting') {
-      return <ConsultingJobPanel {...childData} />;
-    }
-    return <RegularJobPanel {...childData} />;
-  }
+    return (
+        <div className="flex w-full gap-6">
+            <div className="flex flex-col w-[40%] gap-6 pr-4 h-[calc(100vh-180px)] overflow-y-scroll">
+                {props.data.map((data, index) => getListingPanel(index))}
+            </div>
+            <div className="flex w-[60%]">
+                {getListingPanel(expandedIndex)}
+            </div>
+        </div>
 
-  return (
-    <div className="flex flex-col w-full gap-6">
-      {props.data.map((data, index) => getPanel(index))}
-    </div>
-  );
+    );
 }
 
-export default TimelinePanelDoubleCol;
+export default TimelinePanelSingleCol;
