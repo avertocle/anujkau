@@ -1,33 +1,18 @@
-import TimelinePanel from "../components/TimelinePanel.jsx";
-import TimelineData from "../assets/content/timeline.json";
-import {FaTimeline} from "react-icons/fa6";
+import TimelinePanelSm from '../components/timeline/sm/TimelinePanelSm.jsx';
+import TimelineData from '../assets/content/timeline.json';
+import TimelinePanelLg from '../components/timeline/lg/TimelinePanelLg.jsx';
 
 function TimelinePage() {
-    const timelineData = TimelineData
     return (
-        <div className="flex flex-col w-full gap-10">
-            {/*<TimelineHeader/>*/}
-            {TimelineData.map((data, index) => {
-                return <TimelinePanel data={data} key={`tl-${index}`}/>
-            })}
+        <div className="flex h-fit w-full gap-10 pl-2">
+            <div className="flex lg:hidden ">
+                <TimelinePanelSm data={TimelineData}/>
+            </div>
+            <div className="hidden lg:flex lg:visible ">
+                <TimelinePanelLg data={TimelineData}/>
+            </div>
         </div>
     );
-};
-
-export default TimelinePage;
-
-
-function TimelineHeader() {
-    return (
-        <div className="flex p-4 gap-10 justify-between">
-            <FaTimeline className="text-primary"/>
-            <FaTimeline className="text-primary"/>
-            <FaTimeline className="text-primary"/>
-            <FaTimeline className="text-primary"/>
-            <FaTimeline className="text-primary"/>
-            <FaTimeline className="text-primary"/>
-        </div>
-    )
 }
 
-
+export default TimelinePage;
