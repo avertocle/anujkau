@@ -1,65 +1,68 @@
-import {JobIntroSection,} from './common/JobComponents.jsx';
-import WorkSummaryPanel from './common/WorkSummaryPanel.jsx';
-import ReferencesPanel from './common/ReferencesPanel.jsx';
-import {useState} from "react";
-import {JobPanelLayout, JobSectionLayout} from "./common/JobLayouts.jsx";
+import { useState } from 'react';
+import { JobIntroSection } from './common/JobComponents';
+import WorkSummaryPanel from './common/WorkSummaryPanel';
+import ReferencesPanel from './common/ReferencesPanel';
+import { JobPanelLayout, JobSectionLayout } from './common/JobLayouts';
+import { LayoutTypes } from './common/props';
 
-function RegularJobCard({content, canExpandInPlace, isCollapsedOrig, onClickSelect}) {
-    const [isCollapsed, setIsCollapsed] = useState(isCollapsedOrig);
+function RegularJobCard(props) {
+    const { data } = props;
+    const [cardLayout, setCardLayout] = useState(data.layout);
 
-    function handleToggleCollapsed() {
-        console.log('toggling collapsed');
-        setIsCollapsed(!isCollapsed);
-        onClickSelect();
+    function handleCardSelected() {
+        if (cardLayout === LayoutTypes.EXPANDED) {
+            setCardLayout(LayoutTypes.COLLAPSED);
+        } else {
+            setCardLayout(LayoutTypes.EXPANDED);
+        }
+        data.handlers.onClickSelect();
     }
 
-    let childData = {
-        content: content,
-        isCollapsed: isCollapsed,
-        onClickSelect: handleToggleCollapsed,
-        canExpandInPlace: canExpandInPlace,
-    }
+    const childData = {
+        content: data.content,
+        layout: cardLayout,
+        handlers: {
+            onClickSelect: handleCardSelected,
+        },
+    };
 
-    if (!isCollapsed && canExpandInPlace) {
-        return <RegularJobCardExpanded {...childData} />
-    } else {
-        return <RegularJobCardCollapsed {...childData} />
+    if (cardLayout === LayoutTypes.EXPANDED) {
+        return <RegularJobCardExpanded data={childData} />;
     }
+    return <RegularJobCardCollapsed data={childData} />;
 }
 
 export default RegularJobCard;
 
-function RegularJobCardExpanded({content, onToggleCollapsed, onClickSelect, canExpandInPlace}) {
+function RegularJobCardExpanded(props) {
+    const { data } = props;
+    const { theme, references, works } = data.content;
     return (
         <JobPanelLayout
-            content={content}
-            onClickSelect={onClickSelect}
-            isCollapsed={false}
-            onToggleCollapsed={onToggleCollapsed}
-            canExpandInPlace={true}
+            content={data.content}
+            onClickSelect={data.handlers.onClickSelect}
         >
             <div className="flex flex-col w-full gap-4">
-                <JobIntroSection content={content} isCollapsed={false}/>
-                <JobSectionLayout title="Work Summary" theme={content.theme}>
-                    <WorkSummaryPanel works={content.works} theme={content.theme}/>
+                <JobIntroSection content={data.content} isCollapsed={false} />
+                <JobSectionLayout title="Work Summary" theme={theme}>
+                    <WorkSummaryPanel works={works} theme={theme} />
                 </JobSectionLayout>
-                <JobSectionLayout title="References" theme={content.theme}>
-                    <ReferencesPanel references={content.references} theme={content.theme}/>
+                <JobSectionLayout title="References" theme={theme}>
+                    <ReferencesPanel references={references} theme={theme} />
                 </JobSectionLayout>
             </div>
         </JobPanelLayout>
     );
 }
 
-export function RegularJobCardCollapsed({content, onClickSelect, onToggleCollapsed, canExpandInPlace}) {
+export function RegularJobCardCollapsed(props) {
+    const { data } = props;
     return (
         <JobPanelLayout
-            content={content}
-            isCollapsed={true}
-            onClickSelect={onClickSelect}
-            onToggleCollapsed={onToggleCollapsed}
-            canExpandInPlace={canExpandInPlace}>
-            <JobIntroSection content={content} isCollapsed={true}/>
+            content={data.content}
+            onClickSelect={data.handlers.onClickSelect}
+        >
+            <JobIntroSection content={data.content} isCollapsed />
         </JobPanelLayout>
     );
 }
