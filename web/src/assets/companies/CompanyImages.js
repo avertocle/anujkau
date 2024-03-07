@@ -9,13 +9,13 @@ import Mydoco from './mydoco.png';
 import Byteswan from './byteswan.png';
 
 export default {
-    MoonfrogLogo: Moonfrog,
-    ProptigerLogo: Proptiger,
-    CitrixLogo: Citrix,
-    CogmacLogo: Cogmac,
-    AurvaLogo: Aurva,
-    AasthyLogo: Aasthy,
-    DurianpayLogo: Durianpay,
-    MydocoLogo: Mydoco,
-    ByteswanLogo : Byteswan,
-}
+  MoonfrogLogo: Moonfrog,
+  ProptigerLogo: Proptiger,
+  CitrixLogo: Citrix,
+  CogmacLogo: Cogmac,
+  AurvaLogo: Aurva,
+  AasthyLogo: Aasthy,
+  DurianpayLogo: Durianpay,
+  MydocoLogo: Mydoco,
+  ByteswanLogo: Byteswan,
+};

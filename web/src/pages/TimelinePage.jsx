@@ -1,15 +1,18 @@
-import TimelinePanel from "../components/TimelinePanel.jsx";
-import TimelineData from "../assets/content/timeline.json";
+import TimelinePanelSm from '../components/timeline/sm/TimelinePanelSm.jsx';
+import TimelineData from '../assets/content/timeline.json';
+import TimelinePanelLg from '../components/timeline/lg/TimelinePanelLg.jsx';
 
 function TimelinePage() {
-    const timelineData = TimelineData
     return (
-        <div className="lg:grid lg:grid-cols-1 lg:w-[40%] h-fit flex flex-col w-full gap-10 pl-2">
-            {TimelineData.map((data, index) => {
-                return <TimelinePanel data={data} key={`tl-${index}`}/>
-            })}
+        <div className="flex h-fit w-full gap-10 pl-2">
+            <div className="flex lg:hidden ">
+                <TimelinePanelSm data={TimelineData}/>
+            </div>
+            <div className="hidden lg:flex lg:visible ">
+                <TimelinePanelLg data={TimelineData}/>
+            </div>
         </div>
     );
-};
+}
 
 export default TimelinePage;

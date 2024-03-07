@@ -1,7 +1,7 @@
 import UnderConstructionPage from './UnderConstructionPage.jsx';
 
-const AboutPage = () => {
-    return <UnderConstructionPage />;
-};
+function AboutPage() {
+  return <UnderConstructionPage />;
+}
 
 export default AboutPage;

@@ -1,5 +1,5 @@
-import {MdPlaylistAdd} from "react-icons/md";
+import { MdPlaylistAdd } from 'react-icons/md';
 
-export const DefaultIcon = ({ ...attrs }) => {
-    return <MdPlaylistAdd {...attrs} />;
+export function DefaultIcon({ ...attrs }) {
+  return <MdPlaylistAdd {...attrs} />;
 }
