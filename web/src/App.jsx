@@ -2,7 +2,7 @@ import './App.css';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage.jsx';
 import LoginPage from './pages/auth/LoginPage.jsx';
-import MainLayout from './layouts/MainLayout.jsx';
+import MainLayout from './components/common/MainLayout.jsx';
 import { authCheckLoader } from './utils/UserData.js';
 import TimelinePage from './pages/TimelinePage.jsx';
 import BookmarksPage from './pages/BookmarksPage.jsx';

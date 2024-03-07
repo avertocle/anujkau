@@ -1,4 +1,4 @@
-import {GetBorderByThemeColor, GetHeaderBgByThemeColor, GetTextByThemeColor,} from '../../CompanyThemeHelpers.jsx';
+import {GetBorderByThemeColor, GetHeaderBgByThemeColor, GetTextByThemeColor,} from '../CompanyThemeHelpers.jsx';
 import {SvgIcon} from '../../SmallCommons.jsx';
 import CompanyLogos from '../../../assets/companies/CompanyImages.js';
 
@@ -8,7 +8,9 @@ export function JobIntroSection({content, isCollapsed}) {
     return (
         <div className="flex flex-col gap-2">
             <JobHeaderSection content={content} theme={content.theme}/>
-            <p className="flex w-full text-start text-content mt-2">{text}</p>
+            <p className="flex w-full text-justify text-content mt-2">
+                {text}
+            </p>
         </div>
     );
 }

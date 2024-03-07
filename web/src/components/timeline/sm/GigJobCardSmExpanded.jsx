@@ -1,4 +1,4 @@
-import {GetBgByThemeColor, GetBorderByThemeColor, GetHeaderBgByThemeColor} from "../../CompanyThemeHelpers.jsx";
+import {GetBgByThemeColor, GetBorderByThemeColor, GetHeaderBgByThemeColor} from "../CompanyThemeHelpers.jsx";
 import {JobSectionLayout} from "../common/JobLayouts.jsx";
 import WorkSummaryPanel from "../common/WorkSummaryPanel.jsx";
 import ReferencesPanel from "../common/ReferencesPanel.jsx";

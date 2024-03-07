@@ -1,7 +1,7 @@
 import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
 import PlaceholderPanel from '../components/PlaceholderPanel.jsx';
 import ContactData from '../assets/content/contact.json';
-import { SectionLayout } from '../layouts/SectionLayout.jsx';
+import { SectionLayout } from '../components/common/SectionLayout.jsx';
 
 function HomePage() {
   return (

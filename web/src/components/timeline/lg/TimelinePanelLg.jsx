@@ -1,38 +1,57 @@
-import RegularJobCard from '../RegularJobCard.jsx';
-import {useState} from "react";
-import ConsultingJobCardSm from "../sm/ConsultingJobCardSm.jsx";
+import { useState } from 'react';
+import RegularJobCard from '../RegularJobCard';
+import ConsultingJobCardSm from '../sm/ConsultingJobCardSm';
+import { LayoutTypes } from '../../constants';
 
 function TimelinePanelLg(props) {
-    const [expandedIndex, setExpandedIndex] = useState(0);
+    const [selectedCardIdx, setSelectedCardIdx] = useState(0);
+    const { data } = props;
+
+    function handleCardSelected(index) {
+        setSelectedCardIdx(index);
+    }
 
     function getListingPanel(index) {
-        const content = props.data[index];
-        const {type} = content;
+        const content = data[index];
+        const { type } = content;
 
         const childData = {
-            content: content,
-            isCollapsedOrig: !(expandedIndex === index),
-            onClickSelect: (() => {
-                setExpandedIndex(index)
-            }),
-            onToggleCollapsed: (() => {
-            }),
-            canExpandInPlace: false,
-            key: `single-col-job-card-${index}`,
+            content,
+            layout: LayoutTypes.COLLAPSED_FIXED,
+            handlers: {
+                onClickSelect: () => handleCardSelected(index),
+            },
         };
         if (type === 'consulting') {
-            return <ConsultingJobCardSm data={content.gigs} key={`double-col-con-card-${index}`}/>;
+            return <ConsultingJobCardSm data={childData} key={`tplg-cjob-lcard-${index}`} />;
         }
-        return <RegularJobCard {...childData} />;
+        return <RegularJobCard data={childData} key={`tplg-rjob-lcard-${index}`} />;
+    }
+
+    function getDetailsPanel(index) {
+        const content = data[index];
+        const { type } = content;
+
+        const childData = {
+            content,
+            layout: LayoutTypes.EXPANDED_FIXED,
+            handlers: {
+                onClickSelect: () => handleCardSelected(index),
+            },
+        };
+        if (type === 'consulting') {
+            return <ConsultingJobCardSm data={childData} key={`tplg-cjob-dcard-${index}`} />;
+        }
+        return <RegularJobCard data={childData} key={`tplg-rjob-dcard-${index}`} />;
     }
 
     return (
         <div className="flex w-full gap-6">
             <div className="flex flex-col w-[40%] gap-6 pr-4 h-[calc(100vh-180px)] overflow-y-scroll">
-                {props.data.map((data, index) => getListingPanel(index))}
+                {props.data.map((x, index) => getListingPanel(index))}
             </div>
             <div className="flex w-[60%]">
-                {getListingPanel(expandedIndex)}
+                {getDetailsPanel(selectedCardIdx)}
             </div>
         </div>
 

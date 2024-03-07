@@ -1,33 +1,45 @@
-import RegularJobCard from '../RegularJobCard.jsx';
-import ConsultingJobCardSm from "./ConsultingJobCardSm.jsx";
-import {LayoutTypes} from "../common/props.js";
+import { useState } from 'react';
+import RegularJobCard from '../RegularJobCard';
+import ConsultingJobCardSm from './ConsultingJobCardSm';
+import { LayoutTypes } from '../../constants';
 
 function TimelinePanelSm(props) {
-    const data = props.data;
+    const [selectedCardIdx, setSelectedCardIdx] = useState(-1);
+    const { data } = props;
+
+    function handleCardSelected(index) {
+        if (selectedCardIdx === index) {
+            setSelectedCardIdx(-1);
+        } else {
+            setSelectedCardIdx(index);
+        }
+    }
+
+    function getLayoutByIndex(index) {
+        return index === selectedCardIdx ? LayoutTypes.EXPANDED : LayoutTypes.COLLAPSED;
+    }
 
     function getCard(index) {
         const content = data[index];
-        const {type} = content;
+        const { type } = content;
         const childData = {
-            content: content,
-            default_layout: LayoutTypes.COLLAPSED,
-            isCollapsedOrig: true,
-            canExpandInPlace: true,
-            onClickSelect: (() => {
-                console.log('TimelinePanelSm : onClickSelect');
-            }),
-            key: `tpsm-job-card-${index}`,
+            content,
+            layout: getLayoutByIndex(index),
+            handlers: {
+                onClickSelect: () => handleCardSelected(index),
+            },
         };
         if (type === 'consulting') {
-            return <ConsultingJobCardSm data={childData} key={`tpsm-cjob-card-${index}`}/>;
+            return <ConsultingJobCardSm data={childData} key={`tpsm-cjob-card-${index}`} />;
         }
-        return <RegularJobCard {...childData} />;
+        return <RegularJobCard data={childData} key={`tpsm-rjob-card-${index}`} />;
     }
 
     return (
         <div
-            className="flex flex-col w-full gap-6 pr-2 h-[calc(100vh-180px)] overflow-y-scroll">
-            {props.data.map((data, index) => getCard(index))}
+            className="flex flex-col w-full gap-6 pr-2 h-[calc(100vh-180px)] overflow-y-scroll"
+        >
+            {props.data.map((x, index) => getCard(index))}
         </div>
     );
 }
