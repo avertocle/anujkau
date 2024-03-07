@@ -1,9 +1,10 @@
-import {JobIntroSection, JobPanelCollapsed, JobPanelLayout, JobSectionLayout,} from './BaseJobPanels.jsx';
-import WorkSummaryPanel from './WorkSummaryPanel.jsx';
-import ReferencesPanel from './ReferencesPanel.jsx';
+import {JobIntroSection,} from './common/JobComponents.jsx';
+import WorkSummaryPanel from './common/WorkSummaryPanel.jsx';
+import ReferencesPanel from './common/ReferencesPanel.jsx';
 import {useState} from "react";
+import {JobPanelLayout, JobSectionLayout} from "./common/JobLayouts.jsx";
 
-export function RegularJobPanel({content, canExpandInPlace, isCollapsedOrig, onClickSelect}) {
+function RegularJobCard({content, canExpandInPlace, isCollapsedOrig, onClickSelect}) {
     const [isCollapsed, setIsCollapsed] = useState(isCollapsedOrig);
 
     function handleToggleCollapsed() {
@@ -21,12 +22,14 @@ export function RegularJobPanel({content, canExpandInPlace, isCollapsedOrig, onC
 
     return (
         isCollapsed
-            ? <JobPanelCollapsed {...childData} />
-            : <RegularJobPanelExpanded {...childData} />
+            ? <RegularJobCardCollapsed {...childData} />
+            : <RegularJobCardExpanded {...childData} />
     );
 }
 
-function RegularJobPanelExpanded({content, onToggleCollapsed, onClickSelect, canExpandInPlace}) {
+export default RegularJobCard;
+
+function RegularJobCardExpanded({content, onToggleCollapsed, onClickSelect, canExpandInPlace}) {
     return (
         <JobPanelLayout
             content={content}
@@ -44,6 +47,19 @@ function RegularJobPanelExpanded({content, onToggleCollapsed, onClickSelect, can
                     <ReferencesPanel references={content.references} theme={content.theme}/>
                 </JobSectionLayout>
             </div>
+        </JobPanelLayout>
+    );
+}
+
+export function RegularJobCardCollapsed({content, onClickSelect, onToggleCollapsed, canExpandInPlace}) {
+    return (
+        <JobPanelLayout
+            content={content}
+            isCollapsed={true}
+            onClickSelect={onClickSelect}
+            onToggleCollapsed={onToggleCollapsed}
+            canExpandInPlace={canExpandInPlace}>
+            <JobIntroSection content={content} isCollapsed={true}/>
         </JobPanelLayout>
     );
 }

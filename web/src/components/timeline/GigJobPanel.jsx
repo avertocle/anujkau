@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import {JobExpandChip, ProgressionChip} from './BaseJobPanels.jsx';
-import {ReferenceCard} from './ReferencesPanel.jsx';
+import {JobExpandChip, JobRoleProgressionChip} from './common/JobComponents.jsx';
+import {ReferenceCard} from './common/ReferencesPanel.jsx';
 import {GetBgByThemeColor, GetHeaderBgByThemeColor, GetTextByThemeColor} from '../CompanyThemeHelpers.jsx';
 import {SvgIcon} from '../SmallCommons.jsx';
 import CompanyLogos from '../../assets/companies/CompanyImages.js';
@@ -91,7 +91,7 @@ export function GigHeaderSection({content, theme}) {
                     />
                 </div>
                 <div>
-                    <ProgressionChip progression={content.progression} theme={theme}/>
+                    <JobRoleProgressionChip progression={content.progression} theme={theme}/>
                 </div>
             </div>
         </div>

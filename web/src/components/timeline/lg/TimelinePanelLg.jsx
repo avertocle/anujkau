@@ -1,8 +1,8 @@
-import {ConsultingJobPanel} from './timeline/ConsultingJobPanel.jsx';
-import {RegularJobPanel} from './timeline/RegularJobPanel.jsx';
+import RegularJobCard from '../RegularJobCard.jsx';
 import {useState} from "react";
+import ConsultingJobCardSm from "../sm/ConsultingJobCardSm.jsx";
 
-function TimelinePanelSingleCol(props) {
+function TimelinePanelLg(props) {
     const [expandedIndex, setExpandedIndex] = useState(0);
 
     function getListingPanel(index) {
@@ -21,9 +21,9 @@ function TimelinePanelSingleCol(props) {
             key: `single-col-job-card-${index}`,
         };
         if (type === 'consulting') {
-            return <ConsultingJobPanel {...childData} />;
+            return <ConsultingJobCardSm data={content.gigs} key={`double-col-con-card-${index}`}/>;
         }
-        return <RegularJobPanel {...childData} />;
+        return <RegularJobCard {...childData} />;
     }
 
     return (
@@ -39,4 +39,4 @@ function TimelinePanelSingleCol(props) {
     );
 }
 
-export default TimelinePanelSingleCol;
+export default TimelinePanelLg;
