@@ -1,12 +1,9 @@
 import {GetBgByThemeColor, GetTextByThemeColor} from "../../CompanyThemeHelpers.jsx";
-import {JobDurationChip, JobExpandChip} from "./JobComponents.jsx";
+import {JobDurationChip} from "./JobComponents.jsx";
 
 export function JobPanelLayout({
                                    content,
-                                   isCollapsed,
                                    onClickSelect,
-                                   onToggleCollapsed,
-                                   canExpandInPlace,
                                    children,
                                }) {
     const {time, theme} = content;
@@ -18,28 +15,24 @@ export function JobPanelLayout({
                 <div className="" onClick={onClickSelect}>
                     {children}
                 </div>
-                {canExpandInPlace &&
-                    <JobExpandChip
-                        isCollapsed={isCollapsed}
-                        theme={theme}
-                        onClick={onToggleCollapsed}
-                    />
-                }
+                {/*{canExpandInPlace &&*/}
+                {/*    <JobExpandChip*/}
+                {/*        isCollapsed={isCollapsed}*/}
+                {/*        theme={theme}*/}
+                {/*        onClick={onToggleCollapsed}*/}
+                {/*    />*/}
+                {/*}*/}
             </div>
         </div>
     );
 }
 
 export function JobSectionLayout({title, children, theme}) {
-    const bgColor = GetBgByThemeColor(theme.color);
     const textColor = GetTextByThemeColor(theme.color);
     return (
         <div className="flex flex-col gap-1 w-full justify-center items-center">
             <p className={`w-full text-center px-2 ${textColor}`}>
-                ~
-                {title}
-                {' '}
-                ~
+                {`~ ${title} ~`}
             </p>
             {children}
         </div>

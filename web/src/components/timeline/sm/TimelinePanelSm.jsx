@@ -13,15 +13,13 @@ function TimelinePanelSm(props) {
             default_layout: LayoutTypes.COLLAPSED,
             isCollapsedOrig: true,
             canExpandInPlace: true,
-            onClickSelect: (() => {
-                console.log('TimelinePanelSm : onClickSelect');
-            }),
             key: `tpsm-job-card-${index}`,
         };
         if (type === 'consulting') {
             return <ConsultingJobCardSm data={childData} key={`tpsm-cjob-card-${index}`}/>;
+        } else {
+            return <RegularJobCard {...childData} />;
         }
-        return <RegularJobCard {...childData} />;
     }
 
     return (

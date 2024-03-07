@@ -10,21 +10,21 @@ function RegularJobCard({content, canExpandInPlace, isCollapsedOrig, onClickSele
     function handleToggleCollapsed() {
         console.log('toggling collapsed');
         setIsCollapsed(!isCollapsed);
+        onClickSelect();
     }
 
     let childData = {
         content: content,
         isCollapsed: isCollapsed,
-        onClickSelect: onClickSelect,
-        onToggleCollapsed: handleToggleCollapsed,
+        onClickSelect: handleToggleCollapsed,
         canExpandInPlace: canExpandInPlace,
     }
 
-    return (
-        isCollapsed
-            ? <RegularJobCardCollapsed {...childData} />
-            : <RegularJobCardExpanded {...childData} />
-    );
+    if (!isCollapsed && canExpandInPlace) {
+        return <RegularJobCardExpanded {...childData} />
+    } else {
+        return <RegularJobCardCollapsed {...childData} />
+    }
 }
 
 export default RegularJobCard;
@@ -33,10 +33,10 @@ function RegularJobCardExpanded({content, onToggleCollapsed, onClickSelect, canE
     return (
         <JobPanelLayout
             content={content}
-            isCollapsed={false}
             onClickSelect={onClickSelect}
+            isCollapsed={false}
             onToggleCollapsed={onToggleCollapsed}
-            canExpandInPlace={canExpandInPlace}
+            canExpandInPlace={true}
         >
             <div className="flex flex-col w-full gap-4">
                 <JobIntroSection content={content} isCollapsed={false}/>
