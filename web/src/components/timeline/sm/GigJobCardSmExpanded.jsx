@@ -1,5 +1,4 @@
-import {GetBgByThemeColor, GetTextByThemeColor} from "../../CompanyThemeHelpers.jsx";
-import {JobDurationChip, JobExpandChip, JobRoleProgressionChip} from "../common/JobComponents.jsx";
+import {GetBgByThemeColor, GetBorderByThemeColor, GetHeaderBgByThemeColor} from "../../CompanyThemeHelpers.jsx";
 import {JobSectionLayout} from "../common/JobLayouts.jsx";
 import WorkSummaryPanel from "../common/WorkSummaryPanel.jsx";
 import ReferencesPanel from "../common/ReferencesPanel.jsx";
@@ -8,57 +7,47 @@ import CompanyLogos from "../../../assets/companies/CompanyImages.js";
 
 function GigJobCardSmExpanded(props) {
     const data = props.data
-    const {time, theme} = data.content;
+    const {time, theme, progression, works, references, long_desc} = data.content;
     const bgColor = GetBgByThemeColor(theme.color);
+    const borderColor = GetBorderByThemeColor(theme.color);
+    const progColor = GetHeaderBgByThemeColor(theme.color);
 
     return (
-        <div className={`flex flex-col w-full h-fit pl-4 pb-4 gap-2 rounded-b-md rounded-t-md ${bgColor}`}>
-            <JobDurationChip time={time} theme={theme}/>
-            <div className="flex flex-col pr-4 gap-4">
-                <div className="" onClick={data.handlers.onClickSelect}>
-                    <div className="flex flex-col w-full gap-4">
-                        <div className="flex flex-col gap-2">
-                            <GigJobHeaderSectionSmExpanded content={content} theme={content.theme}/>
-                            <p className="flex w-full text-start text-content mt-2">{text}</p>
-                        </div>
-                        <JobSectionLayout title="Work Summary" theme={content.theme}>
-                            <WorkSummaryPanel works={content.works} theme={content.theme}/>
-                        </JobSectionLayout>
-                        <JobSectionLayout title="References" theme={content.theme}>
-                            <ReferencesPanel references={content.references} theme={content.theme}/>
-                        </JobSectionLayout>
-                    </div>
-                </div>
-                <JobExpandChip
-                    isCollapsed={isCollapsed}
-                    theme={theme}
-                    onClick={onToggleCollapsed}
+        <div
+            className={`flex flex-col w-full p-2 gap-4 text-xs font-light ${bgColor} border border-opacity-20 ${borderColor} rounded-md`}
+            onClick={data.handlers.onGigCardSelect}
+        >
+            <div className="flex w-full">
+                <SvgIcon
+                    src={CompanyLogos[data.content.company.logo]}
+                    alt={data.content.company.name}
+                    className="flex max-w-24 max-h-6 rounded-md"
                 />
+                <div
+                    className={`flex px-2 py-0.5 ${progColor} bg-opacity-20 rounded-md ml-auto items-center`}>
+                    <p>{progression.join(' -> ')}</p>
+                </div>
+            </div>
+            <div className="flex justify-end">
+                <div className="flex gap-2 w-fit">
+                    <p>{time.start}</p>
+                    <p>-</p>
+                    <p>{time.end}</p>
+                    <p className={""}>{`[${time.duration}]`}</p>
+                </div>
+            </div>
+            <div className={`flex flex-col w-full gap-2`}>
+                <p className="flex w-full text-justify mb-2">{long_desc.text}</p>
+                <JobSectionLayout title="Work Summary" theme={theme}>
+                    <WorkSummaryPanel works={works} theme={theme}/>
+                </JobSectionLayout>
+                <JobSectionLayout title="References" theme={theme}>
+                    <ReferencesPanel references={references} theme={theme}/>
+                </JobSectionLayout>
             </div>
         </div>
-    );
+    )
+        ;
 }
 
 export default GigJobCardSmExpanded;
-
-function GigJobHeaderSectionSmExpanded({content, theme}) {
-    const textColor = GetTextByThemeColor(theme.color);
-    return (
-        <div className="flex gap-4 w-full justify-between">
-            <div className="flex flex-col gap-1">
-                <p className={`flex ${textColor} text-lg`}>{content.company.name}</p>
-                <div className="flex gap-4 font-extralight text-xs">
-                    <JobRoleProgressionChip progression={content.progression} theme={theme}/>
-                    <p>{content.company.location}</p>
-                </div>
-            </div>
-            <div className="flex items-end">
-                <SvgIcon
-                    src={CompanyLogos[content.company.logo]}
-                    alt="logos"
-                    className="flex max-w-30 max-h-8 rounded-md"
-                />
-            </div>
-        </div>
-    );
-}

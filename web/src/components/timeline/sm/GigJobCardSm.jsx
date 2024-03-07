@@ -1,13 +1,15 @@
-function GigJobCardSm(props) {
+import {LayoutTypes} from "../common/props.js";
+import GigJobCardSmCollapsed from "./GigJobCardSmCollapsed.jsx";
+import GigJobCardSmExpanded from "./GigJobCardSmExpanded.jsx";
 
-    if (props.isCollapsed) {
-        return <GigJobCardSmCollapsed {...props} />;
+function GigJobCardSm(props) {
+    const data = props.data;
+    const layout = data.default_layout;
+    if (layout === LayoutTypes.COLLAPSED) {
+        return <GigJobCardSmCollapsed data={data}/>;
     } else {
-        return <GigJobCardSmExpanded {...props} />;
+        return <GigJobCardSmExpanded data={data}/>;
     }
 }
 
 export default GigJobCardSm;
-
-
-

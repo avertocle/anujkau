@@ -13,7 +13,7 @@ function WorkCard({work, theme}) {
     const textColor = GetTextByThemeColor(theme.color);
     return (
         <div className={`flex gap-1 p-1 items-center ${bgColor} rounded-md`}>
-            <p className="flex p-0.5 items-center font-light text-sm">{work.text.repeat(3)}</p>
+            <p className="flex p-0.5 text-justify font-light">{work.text.repeat(3)}</p>
         </div>
     );
 }
