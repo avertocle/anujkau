@@ -1,4 +1,4 @@
-import {GetBgByThemeColor, GetTextByThemeColor} from '../../CompanyThemeHelpers.jsx';
+import {GetBgByThemeColor, GetTextByThemeColor} from '../CompanyThemeHelpers.jsx';
 
 export default function WorkSummaryPanel(props) {
     return (

@@ -1,4 +1,4 @@
-import {GetBorderByThemeColor, GetHeaderBgByThemeColor, GetTextByThemeColor,} from '../../CompanyThemeHelpers.jsx';
+import {GetBorderByThemeColor, GetHeaderBgByThemeColor, GetTextByThemeColor,} from '../CompanyThemeHelpers.jsx';
 import {SvgIcon} from '../../SmallCommons.jsx';
 import CompanyLogos from '../../../assets/companies/CompanyImages.js';
 

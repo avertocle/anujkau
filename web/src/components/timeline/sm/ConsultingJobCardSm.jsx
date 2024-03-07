@@ -1,20 +1,26 @@
 import { useState } from 'react';
 import { JobDurationChip, JobIntroSection } from '../common/JobComponents';
-import { LayoutTypes } from '../common/props';
-import { GetBgByThemeColor } from '../../CompanyThemeHelpers';
+import { LayoutTypes } from '../../constants';
+import { GetBgByThemeColor } from '../CompanyThemeHelpers';
 import GigJobCardSm from './GigJobCardSm';
 
 function ConsultingJobCardSm(props) {
     const { data } = props;
-    const [currLayout, setCurrLayout] = useState(props.layout || LayoutTypes.COLLAPSED);
+    const [cardLayout, setCardLayout] = useState(data.layout);
     const [selectedCardIdx, setSelectedCardIdx] = useState(-1);
 
     function handleLayoutToggle() {
-        if (currLayout === LayoutTypes.COLLAPSED) {
-            setCurrLayout(LayoutTypes.EXPANDED);
-        } else {
-            setCurrLayout(LayoutTypes.COLLAPSED);
+        switch (cardLayout) {
+        case LayoutTypes.EXPANDED:
+            setCardLayout(LayoutTypes.COLLAPSED);
+            break;
+        case LayoutTypes.COLLAPSED:
+            setCardLayout(LayoutTypes.EXPANDED);
+            break;
+        default:
+            break;
         }
+        data.handlers.onClickSelect();
     }
 
     function handleGigCardSelect(idx) {
@@ -37,8 +43,10 @@ function ConsultingJobCardSm(props) {
 
         switch (layout) {
         case LayoutTypes.COLLAPSED:
+        case LayoutTypes.COLLAPSED_FIXED:
             return <ConsultingJobPanelCollapsed data={childData} />;
         case LayoutTypes.EXPANDED:
+        case LayoutTypes.EXPANDED_FIXED:
             return <ConsultingJobPanelExpanded data={childData} />;
         default:
             console.error('ConsultingJobCardSm : getCardByLayout : invalid layout', layout);
@@ -48,7 +56,7 @@ function ConsultingJobCardSm(props) {
 
     return (
         <>
-            { getCardByLayout(currLayout) }
+            { getCardByLayout(cardLayout) }
         </>
     );
 }
@@ -71,7 +79,7 @@ function ConsultingJobPanelExpanded(props) {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-2 w-[90%] mx-auto">
+            <div className="flex flex-col gap-2 w-[90%] ml-auto">
                 {gigs.map((gig, idx) => {
                     const childData = {
                         content: gig,

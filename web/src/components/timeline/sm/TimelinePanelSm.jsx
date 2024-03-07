@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import RegularJobCard from '../RegularJobCard';
 import ConsultingJobCardSm from './ConsultingJobCardSm';
-import { LayoutTypes } from '../common/props';
+import { LayoutTypes } from '../../constants';
 
 function TimelinePanelSm(props) {
     const [selectedCardIdx, setSelectedCardIdx] = useState(-1);
@@ -39,7 +39,7 @@ function TimelinePanelSm(props) {
         <div
             className="flex flex-col w-full gap-6 pr-2 h-[calc(100vh-180px)] overflow-y-scroll"
         >
-            {props.data.map((d, index) => getCard(index))}
+            {props.data.map((x, index) => getCard(index))}
         </div>
     );
 }

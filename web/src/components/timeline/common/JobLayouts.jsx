@@ -1,4 +1,4 @@
-import { GetBgByThemeColor, GetTextByThemeColor } from '../../CompanyThemeHelpers';
+import { GetBgByThemeColor, GetTextByThemeColor } from '../CompanyThemeHelpers';
 import { JobDurationChip } from './JobComponents';
 
 export function JobPanelLayout({

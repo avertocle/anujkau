@@ -3,17 +3,22 @@ import { JobIntroSection } from './common/JobComponents';
 import WorkSummaryPanel from './common/WorkSummaryPanel';
 import ReferencesPanel from './common/ReferencesPanel';
 import { JobPanelLayout, JobSectionLayout } from './common/JobLayouts';
-import { LayoutTypes } from './common/props';
+import { LayoutTypes } from '../constants';
 
 function RegularJobCard(props) {
     const { data } = props;
     const [cardLayout, setCardLayout] = useState(data.layout);
 
     function handleCardSelected() {
-        if (cardLayout === LayoutTypes.EXPANDED) {
+        switch (cardLayout) {
+        case LayoutTypes.EXPANDED:
             setCardLayout(LayoutTypes.COLLAPSED);
-        } else {
+            break;
+        case LayoutTypes.COLLAPSED:
             setCardLayout(LayoutTypes.EXPANDED);
+            break;
+        default:
+            break;
         }
         data.handlers.onClickSelect();
     }
@@ -26,10 +31,17 @@ function RegularJobCard(props) {
         },
     };
 
-    if (cardLayout === LayoutTypes.EXPANDED) {
+    switch (cardLayout) {
+    case LayoutTypes.EXPANDED:
+    case LayoutTypes.EXPANDED_FIXED:
         return <RegularJobCardExpanded data={childData} />;
+    case LayoutTypes.COLLAPSED:
+    case LayoutTypes.COLLAPSED_FIXED:
+        return <RegularJobCardCollapsed data={childData} />;
+    default:
+        console.error('RegularJobCard : invalid layout', cardLayout);
+        return null;
     }
-    return <RegularJobCardCollapsed data={childData} />;
 }
 
 export default RegularJobCard;

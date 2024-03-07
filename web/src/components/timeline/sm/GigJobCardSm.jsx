@@ -1,4 +1,4 @@
-import {LayoutTypes} from "../common/props.js";
+import {LayoutTypes} from "../../constants.js";
 import GigJobCardSmCollapsed from "./GigJobCardSmCollapsed.jsx";
 import GigJobCardSmExpanded from "./GigJobCardSmExpanded.jsx";
 
