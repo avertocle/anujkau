@@ -47,10 +47,10 @@ function TimelinePanelLg(props) {
 
     return (
         <div className="flex w-full gap-6">
-            <div className="flex flex-col w-[40%] gap-6 pr-4 h-[calc(100vh-180px)] overflow-y-scroll">
+            <div className="flex flex-col w-[40%] gap-6 pr-2 h-[calc(100vh-180px)] overflow-y-scroll">
                 {props.data.map((x, index) => getListingPanel(index))}
             </div>
-            <div className="flex w-[60%]">
+            <div className="flex w-[60%] pr-2 h-[calc(100vh-180px)] overflow-y-scroll">
                 {getDetailsPanel(selectedCardIdx)}
             </div>
         </div>

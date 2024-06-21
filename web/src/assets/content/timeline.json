@@ -358,23 +358,23 @@
       "JQuery"
     ],
     "short_desc": {
-      "text": "Cogmac is a software development company based out of NCR, India. I was part of the core team, working on the product development and the client projects."
+      "text": "Helped build exarb as a fully bootstrapped and profitable business that now operates as a subsidiary of Cogmac. We made an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. I owned the trader facing part of the suite, product + ui/ux + dev + devops + customer support"
     },
     "long_desc": {
-      "text": "Cogmac is a software development company based out of NCR, India. I was part of the core team, working on the product development and the client projects. I was responsible for the product development, which was written in Java and JS. I also worked on the client projects, which were written in Java, C and JS."
+      "text": "We made an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. I owned the trader facing part of the suite, product + ui/ux + dev + devops + customer support.Products Developed: Complete trading terminal for adding/managing strategies with real-time updates from different market-multicast feeds, P&L calculations, validations, trade-trackers, report generation; administrator client; admin terminal for Risk Management system (RMS); trade-log analysis tools and benchmarking tools."
     },
     "works": [
       {
-        "text": "Worked on the game server, which was written in GoLang"
+        "text": "Build a desktop based trading portal for adding/managing strategies with real-time updates from different market-multicast feeds, P&L calculations, validations, trade-trackers and report generation."
       },
       {
-        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+        "text": "Built an administrator terminal and admin/user portal for Risk Management system (RMS)."
       },
       {
-        "text": "Worked on the data warehouse, which was built on top of Redshift"
+        "text": "Wrote various tools for trade latency benchmarking, trade-log analysis, trader performance, trader behaviour, bias measurement etc."
       },
       {
-        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+        "text": "Sat with traders everyday to come up with UX enhancements based on eyeballing their behaviour and on feedback."
       }
     ],
     "references": [
@@ -413,23 +413,20 @@
       "FreeBSD"
     ],
     "short_desc": {
-      "text": "Citrix Systems is a multinational software company based out of Bangalore, India. I was part of the core team, working on the product development and the client projects."
+      "text": "Worked as a software developer on Citrix flagship NetScaler product team. Primarily worked on GSLB (Global Server Load Balancing), statistics aggregation, cli validation."
     },
     "long_desc": {
-      "text": "Citrix Systems is a multinational software company based out of Bangalore, India. I was part of the core team, working on the product development and the client projects. I was responsible for the product development, which was written in C and FreeBSD. I also worked on the client projects, which were written in C and FreeBSD."
+      "text": "Worked as a software developer on Citrix flagship NetScaler product team. Primarily worked on GSLB (Global Server Load Balancing), statistics aggregation, cli validation."
     },
     "works": [
       {
-        "text": "Worked on the game server, which was written in GoLang"
+        "text": "Extended the GSLB (Global Server Load Balancing) statistics aggregation functionality from a single box to a cluster of devices."
       },
       {
-        "text": "Worked on the analytics pipeline, which was written in NodeJS"
+        "text": "Worked on command validation framework."
       },
       {
-        "text": "Worked on the data warehouse, which was built on top of Redshift"
-      },
-      {
-        "text": "Worked on the game client, which was written in Cocos2Dx and Unity2D"
+        "text": "Over 250 bug fixes and other small maintenance features."
       }
     ],
     "references": [

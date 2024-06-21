@@ -1,6 +1,5 @@
-# IVW
-
-### By Ohusky
+# Anuj Kaushik
+### Personal Wensite
 
 #### Local setup
 
