@@ -18,17 +18,17 @@
       "Owner"
     ],
     "short_desc": {
-      "text": "I work as a software engineering consultant with early stage startups in all stages of engineering hierarchy : coding, hiring, execution, people management, whatever it takes."
+      "text": "I work as a full-time Head of Engineering with early stage startups building their products and setting up engineering teams."
     },
     "long_desc": {
-      "text": "I work as a software engineering consultant with early stage startups in all stages of engineering hierarchy : coding, hiring, execution, people management, whatever it takes."
+      "text": "I work as a full-time Head of Engineering with early stage startups building their products and setting up engineering teams, contributing at every aspect of engineering process : coding, hiring, execution, people management, whatever it takes."
     },
     "gigs": [
       {
         "time": {
-          "start": "Nov 2023",
+          "start": "Oct '23",
           "end": "Present",
-          "duration": "4m"
+          "duration": "10m"
         },
         "theme": {
           "color": "blue"
@@ -40,19 +40,15 @@
           "commitment": "Full Time"
         },
         "progression": [
-          "Head Of Engineering"
+          "Direction Of Engineering"
         ],
         "short_desc": {
           "text": ""
         },
         "long_desc": {
-          "text": "Aurva is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": "Aurva is a data security startup based out of Bangalore, India. Worked on engineering execution, people management, hands-on coding, product, UI/UX design, hiring, and setting up processes."
         },
-        "works": [
-          {
-            "text": "Worked on the game server, which was written in GoLang"
-          }
-        ],
+        "works": [],
         "references": [
           {
             "name": "Apurv Garg",
@@ -68,8 +64,8 @@
       },
       {
         "time": {
-          "start": "April 2023",
-          "end": "Oct 2023",
+          "start": "Feb '23",
+          "end": "Sep '23",
           "duration": "6m"
         },
         "theme": {
@@ -82,19 +78,15 @@
           "commitment": "Full Time"
         },
         "progression": [
-          "Software Engineer"
+          "Direction Of Engineering"
         ],
         "short_desc": {
           "text": ""
         },
         "long_desc": {
-          "text": "Doco is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": "MyDoco is b2b commerce startup based out of NCR, India. I build their MVP end to end, getting them to their first 1000 retailers, and a total order volume of 20L per month eventually to raising their seed round."
         },
-        "works": [
-          {
-            "text": "Worked on the game server, which was written in GoLang"
-          }
-        ],
+        "works": [],
         "references": [
           {
             "name": "Bhoopendra Singh",
@@ -105,8 +97,8 @@
       },
       {
         "time": {
-          "start": "Dec 2021",
-          "end": "Dec 2022",
+          "start": "Jan '22",
+          "end": "Dec '22",
           "duration": "1y"
         },
         "theme": {
@@ -119,19 +111,15 @@
           "commitment": "Full Time"
         },
         "progression": [
-          "Head Of Engineering"
+          "Direction Of Engineering"
         ],
         "short_desc": {
           "text": ""
         },
         "long_desc": {
-          "text": "Durianpay is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": "Durianpay is a fintech startup based out of Indonesia and Bangalore. Led a remote team of 15 engineers in India and Indonesia building a payment gateway aggregator. Owned execution, people management and hiring for engineering."
         },
-        "works": [
-          {
-            "text": "Worked on the game server, which was written in GoLang"
-          }
-        ],
+        "works": [],
         "references": [
           {
             "name": "Kumar Puspesh",
@@ -147,8 +135,8 @@
       },
       {
         "time": {
-          "start": "Aug 2021",
-          "end": "Dec 2021",
+          "start": "Aug '21",
+          "end": "Dec '21",
           "duration": "5m"
         },
         "theme": {
@@ -161,19 +149,15 @@
           "commitment": "Full Time"
         },
         "progression": [
-          "Engineering Manager"
+          "Direction Of Engineering"
         ],
         "short_desc": {
           "text": ""
         },
         "long_desc": {
-          "text": "Aasthy is a startup based out of Bangalore, India. I am responsible for the engineering team, working on the product development and the client projects."
+          "text": "Aasthy is a startup based out of Bangalore, India. I helped with hiring and engineering execution."
         },
-        "works": [
-          {
-            "text": "Worked on the game server, which was written in GoLang"
-          }
-        ],
+        "works": [],
         "references": [
           {
             "name": "Srinath Ramanujan",
@@ -184,9 +168,9 @@
       },
       {
         "time": {
-          "start": "Jan 2021",
-          "end": "June 2021",
-          "duration": "6m"
+          "start": "Jan '21",
+          "end": "Jul '21",
+          "duration": "7m"
         },
         "theme": {
           "color": "yellow"

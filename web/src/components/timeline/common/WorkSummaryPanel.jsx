@@ -1,5 +1,4 @@
 import {GetBgByThemeColor, GetTextByThemeColor} from '../CompanyThemeHelpers.jsx';
-import {AiFillAccountBook} from "react-icons/ai";
 import {HiOutlineArrowRightCircle} from "react-icons/hi2";
 
 export default function WorkSummaryPanel(props) {

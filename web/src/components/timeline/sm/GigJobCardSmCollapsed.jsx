@@ -25,11 +25,11 @@ function GigJobCardSmCollapsed(props) {
                 </div>
             </div>
             <div className="flex justify-end">
-                <div className="flex gap-2 w-fit">
+                <div className="flex gap-2 w-fit items-center">
                     <p>{time.start}</p>
                     <p>-</p>
                     <p>{time.end}</p>
-                    <p className={""}>{`[${time.duration}]`}</p>
+                    <p className={`px-2 border rounded-lg ${borderColor} border-opacity-50`}>{`${time.duration}`}</p>
                 </div>
             </div>
         </div>
