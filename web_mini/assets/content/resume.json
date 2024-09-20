@@ -1,0 +1,22 @@
+{
+  "name": "Anuj Kaushik",
+  "college": "Indian Institute of Technology - BHU, 2011",
+  "course": "5 Yr. Integrated M.Tech in Mathematics & Computing",
+  "contact": {
+    "email": "anuj@byteswan.com",
+    "phone": "+91-8376954055",
+    "linkedin": "https://www.linkedin.com/in/anujkau",
+    "github": "http://github.com/avertocle"
+  },
+  "references": "Co-Founders/CTOs of any of the companies mentioned in the CV (except Citrix of-course)",
+  "companies": {
+    "byteswan": {
+      "name": "Byteswan",
+      "location": "Bangalore",
+      "titles": [
+        "Owner"
+      ],
+      "duration": "Feb ’21 - Present [ 3y 9m ]"
+    }
+  }
+}
