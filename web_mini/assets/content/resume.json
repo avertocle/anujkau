@@ -16,13 +16,13 @@
         "Owner"
       ],
       "duration": "Feb ’21 - Present [ 3y 9m ]",
-      "description": "I work as a full-time director of engineering (limited term engagement) with early stage startups, doing whatever-it-takes to get them to their next stage. I contributed across : coding, hiring, people management, devops, dev-processes, strategy, product & design. I transition out once the product is stable and I’ve hired the right team and leadership.",
+      "description": "I work as a full-time director of engineering (limited term engagement) with early stage startups, doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product & design. I transition out once the product is stable and I’ve hired the right team including leadership, as needed.",
       "sub_companies": {
         "aurva": {
           "name": "Aurva",
           "domain": "Data Security",
           "duration": "Oct ’23 - Oct '24 [ 1y ]",
-          "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
+          "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed on coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
         },
         "doco": {
           "name": "Doco",
@@ -104,7 +104,7 @@
       ],
       "duration": "Jul ’11 - Feb '13 [ 1y 8m ]",
       "stack": "C/FreeBSD",
-      "description": "Extended GSLB (Global Server Load Balancing) stat aggregation from single box to a cluster for Citrix flagship product - NetScaler. Also, lots of maintenance work (250+ bug fixes and small features.). "
+      "description": "Extended GSLB (Global Server Load Balancing) stat aggregation from single box to a cluster for Citrix flagship product - NetScaler. Also, lots of character building maintenance work (250+ bug fixes and small features.). "
     }
   }
 }
