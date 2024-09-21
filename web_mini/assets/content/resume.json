@@ -4,7 +4,6 @@
   "course": "5 Yr. Integrated M.Tech in Mathematics & Computing",
   "contact": {
     "email": "anuj@byteswan.com",
-    "phone": "+91-8376954055",
     "linkedin": "https://www.linkedin.com/in/anujkau",
     "github": "http://github.com/avertocle"
   },
@@ -17,19 +16,19 @@
         "Owner"
       ],
       "duration": "Feb ’21 - Present [ 3y 9m ]",
-      "description": "I work as a full time director of engineering with various early stage startups (one at a time), doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product, design.",
+      "description": "I work as a full-time director of engineering (limited term engagement) with early stage startups, doing whatever-it-takes to get them to their next stage. I contributed across : coding, hiring, people management, devops, dev-processes, strategy, product & design. I transition out once the product is stable and I’ve hired the right team and leadership.",
       "sub_companies": {
         "aurva": {
           "name": "Aurva",
           "domain": "Data Security",
           "duration": "Oct ’23 - Oct '24 [ 1y ]",
-          "description": "Director of Engineering for a seed stage startup building an enterprise data security product for US and India markets. Work spanned hiring and micro-managing execution. Hired senior devs and transitioned out once the product reached 10 enterprise customers. "
+          "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
         },
         "doco": {
           "name": "Doco",
           "domain": "B2B Commerce",
           "duration": "Apr - Sep '23 [ 6m ]",
-          "description": "Build the entire MVP, helped with customers acquisition to get their TPV to 1 Cr per month, raising their seed round."
+          "description": "Built V1 of their product, drove customer acquisition and got their TPV to 25L per month, enabling them to raise their seed round."
         },
         "confidential_02": {
           "name": "Confidential",
@@ -41,7 +40,7 @@
           "name": "Durianpay",
           "domain": "Fintech",
           "duration": "Jan - Dec '22 [ 6m ]",
-          "description": "Worked as a Director of Engineering for a seed funded startup building a payment gateway for Indonesia. Led a team of 10-15 members split across bangalore and jakarta. Setup hiring and execution processes, eventually hired an Engineering manager and transitioned out."
+          "description": "A seed stage startup building a payment gateway for Indonesia. Led an engg team of 10-15 members split across bangalore and jakarta, contributing on architecture, people management, execution & hiring. Transitioned out once the right team and cadence was set in place."
         },
         "aasthy": {
           "name": "Aasthy",
