@@ -5,8 +5,8 @@ import {Designation, Duration, filterByKeys, Heading, ListItem, Text} from '../c
 const HomePage = () => {
     return (
         <div
-            className="flex flex-col w-full h-full items-center justify-center text-justify">
-            <div className="flex flex-col gap-2 w-full max-w-[900px] h-[calc(100vh-20px)] bg-white p-6
+            className="flex flex-col w-full h-full items-center text-justify">
+            <div className="flex flex-col gap-2 w-full max-w-[900px] h-full bg-white p-6
                 overflow-auto scrollbar scrollbar-thumb-primary-600/30">
                 <div className="flex h-fit px-2">
                     <ResumeHeader/>
@@ -47,7 +47,7 @@ const HomePage = () => {
                                 </div>))}
                     </div>
                 </div>
-                <div className="min-h-[1px] bg-primary-600 my-2"/>
+                <div className="flex sm:min-h-[50px] max-h-[1px] my-2 border-t border-primary-600"/>
             </div>
         </div>
     );
