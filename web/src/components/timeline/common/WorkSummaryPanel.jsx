@@ -1,4 +1,5 @@
 import {GetBgByThemeColor, GetTextByThemeColor} from '../CompanyThemeHelpers.jsx';
+import {HiOutlineArrowRightCircle} from "react-icons/hi2";
 
 export default function WorkSummaryPanel(props) {
     return (
@@ -12,8 +13,11 @@ function WorkCard({work, theme}) {
     const bgColor = GetBgByThemeColor(theme.color);
     const textColor = GetTextByThemeColor(theme.color);
     return (
-        <div className={`flex gap-1 p-1 items-center ${bgColor} rounded-md`}>
-            <p className="flex p-0.5 text-justify font-light">{work.text.repeat(3)}</p>
+        <div className={`flex gap-1 p-1 items-start ${bgColor} rounded-md`}>
+            <div className="flex w-6 h-full pt-1 items-start ">
+                <HiOutlineArrowRightCircle className="stroke-neutral-500"/>
+            </div>
+            <p className="flex w-full font-light items-start">{work.text}</p>
         </div>
     );
 }

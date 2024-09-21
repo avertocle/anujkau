@@ -33,14 +33,15 @@ function GigJobCardSmExpanded(props) {
                     <p>{time.start}</p>
                     <p>-</p>
                     <p>{time.end}</p>
-                    <p className={""}>{`[${time.duration}]`}</p>
+                    <p className="px-2 border rounded-lg border-neutral-600">{`${time.duration}`}</p>
                 </div>
             </div>
             <div className={`flex flex-col w-full gap-2`}>
                 <p className="flex w-full text-justify mb-2">{long_desc.text}</p>
-                <JobSectionLayout title="Work Summary" theme={theme}>
-                    <WorkSummaryPanel works={works} theme={theme}/>
-                </JobSectionLayout>
+                {!!works.length && <JobSectionLayout title="Work Summary" theme={theme}>
+                        <WorkSummaryPanel works={works} theme={theme}/>
+                    </JobSectionLayout>
+                }
                 <JobSectionLayout title="References" theme={theme}>
                     <ReferencesPanel references={references} theme={theme}/>
                 </JobSectionLayout>
