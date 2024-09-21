@@ -16,7 +16,96 @@
       "titles": [
         "Owner"
       ],
-      "duration": "Feb ’21 - Present [ 3y 9m ]"
+      "duration": "Feb ’21 - Present [ 3y 9m ]",
+      "description": "I work as a full time director of engineering with various early stage startups (one at a time), doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product, design.",
+      "sub_companies": {
+        "aurva": {
+          "name": "Aurva",
+          "domain": "Data Security",
+          "duration": "Oct ’23 - Oct '24 [ 1y ]",
+          "description": "Director of Engineering for a seed stage startup building an enterprise data security product for US and India markets. Work spanned hiring and micro-managing execution. Hired senior devs and transitioned out once the product reached 10 enterprise customers. "
+        },
+        "doco": {
+          "name": "Doco",
+          "domain": "B2B Commerce",
+          "duration": "Apr - Sep '23 [ 6m ]",
+          "description": "Build the entire MVP, helped with customers acquisition to get their TPV to 1 Cr per month, raising their seed round."
+        },
+        "confidential_02": {
+          "name": "Confidential",
+          "domain": "Planning Gig",
+          "duration": "Jan - Mar '23 [ 6m ]",
+          "description": "Planning gig. Product, design, tech architecture, hiring plan, team budget, execution timelines."
+        },
+        "durianpay": {
+          "name": "Durianpay",
+          "domain": "Fintech",
+          "duration": "Jan - Dec '22 [ 6m ]",
+          "description": "Worked as a Director of Engineering for a seed funded startup building a payment gateway for Indonesia. Led a team of 10-15 members split across bangalore and jakarta. Setup hiring and execution processes, eventually hired an Engineering manager and transitioned out."
+        },
+        "aasthy": {
+          "name": "Aasthy",
+          "domain": "Fintech/Real Estate",
+          "duration": "Sep - Dec '21 [ 4m ]",
+          "description": "Hired and led a small engineering team of 6 devs for an angel funded startup building a fractional real estate investment platform."
+        },
+        "confidential_01": {
+          "name": "Confidential",
+          "domain": "Gaming",
+          "duration": "Feb - Aug '21 [ 6m ]",
+          "description": "Led a team of 3 contractors to deliver multiple small hyper casual games for an Indie game studio."
+        }
+      }
+    },
+    "moonfrog": {
+      "name": "Moonfrog Labs",
+      "location": "Bangalore",
+      "titles": [
+        "SSE",
+        "EM"
+      ],
+      "duration": "Sep ’16 - Dec '20 [ 4y ]",
+      "stack": "Golang, Redshift, AWS, NodeJs, Cocos2Dx, Unity",
+      "descriptions": [
+        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops and hiring. Game had 4M DAU, 11M MAU. Total org size reporting averaged around 25 (dev + devops). Owned org-wide engineering hiring. Revamped the engg hiring process. Upskilled high potential ICs to take up org wide roles and pod leads to replace me as an EM before transitioning out.",
+        "Contributions as SSE : Complete ownership of Moonfrog Analytics Infra. Scaled the ETL-Pipeline to ingest 2B to 12B events per day and the warehouse infra to handle approx 12 TB. Various other features like monitoring/throttling/alerting infra for ETL-pipeline, automated reports, anomaly alerts, on-Demand data loading/transfer infra, in-house dashboarding platform, real-time monitoring/alerting infra for game liveops. Made a long term roadmap, hired 3 engineers and handed it over to a new EM."
+      ]
+    },
+    "proptiger": {
+      "name": "Proptiger",
+      "location": "Gurgaon",
+      "titles": [
+        "SE",
+        "SSE"
+      ],
+      "duration": "May ’14 - Jun '16 [ 2y 2m]",
+      "stack": "Java, Spring, Solr, MySQL",
+      "descriptions": [
+        "Complete ownership of Proptiger and Makaan search infrastructure. Improved the search CTR from 40% to 85%.",
+        "Scaled Proptiger Datalabs (B2B product for real-estate trend analysis) to support 20x more data.",
+        "Led the buyer-side part for the relaunch of makaan.com platform, after acquisition by Proptiger."
+      ]
+    },
+    "exarb": {
+      "name": "Exarb",
+      "location": "Bangalore",
+      "titles": [
+        "Co-Founder"
+      ],
+      "duration": "Mar ’13 - mar '15 [ 2y ]",
+      "stack": "Core-Java, Swing",
+      "description": "Built an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. Owned the trader facing part of the suite: product + ui/ux + dev + devops + customer support. Products Developed: Fully featured trading terminal with market feeds, P&L calc, reporting; admin portal; tools for trade-log analysis, benchmarking, historic analysis, trader behavior analysis"
+    },
+    "citrix": {
+      "name": "Citrix",
+      "location": "Bangalore",
+      "titles": [
+        "SE-1",
+        "SE-2"
+      ],
+      "duration": "Jul ’11 - Feb '13 [ 1y 8m ]",
+      "stack": "C/FreeBSD",
+      "description": "Extended GSLB (Global Server Load Balancing) stat aggregation from single box to a cluster for Citrix flagship product - NetScaler. Also, lots of maintenance work (250+ bug fixes and small features.). "
     }
   }
 }

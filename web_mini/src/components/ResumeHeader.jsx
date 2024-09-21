@@ -4,11 +4,11 @@ import ResumeData from '../../assets/content/resume.json';
 const ResumeHeader = () => {
     return (
         <div className="flex justify-between w-full">
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 justify-end">
                 <h1 className="text-2xl text-primary-600">{ResumeData.name}</h1>
-                <p className="text-sm font-semibold">
+                <p className="font-semibold">
                     {ResumeData.college},
-                    <span className="pl-2 text-sm font-normal">{ResumeData.course}</span>
+                    <span className="pl-2 font-normal">{ResumeData.course}</span>
                 </p>
             </div>
             <div className="flex flex-col gap-1 items-end justify-end">
