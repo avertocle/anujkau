@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <div
             className="flex flex-col w-full h-full items-center justify-center text-justify">
-            <div className="flex flex-col gap-2 w-full max-w-[900px] h-full bg-white p-6
+            <div className="flex flex-col gap-2 w-full max-w-[900px] h-[calc(100vh-20px)] bg-white p-6
                 overflow-auto scrollbar scrollbar-thumb-primary-600/30">
                 <div className="flex h-fit px-2">
                     <ResumeHeader/>
