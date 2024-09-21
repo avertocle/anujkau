@@ -1,19 +1,19 @@
 import ResumeHeader from "../components/ResumeHeader.jsx";
 import ResumeData from '../../assets/content/resume.json';
-import { Text, Designation, Duration, filterByKeys, Heading, ListItem } from '../components/Commons.jsx';
+import {Designation, Duration, filterByKeys, Heading, ListItem, Text} from '../components/Commons.jsx';
 
 const HomePage = () => {
     return (
         <div
             className="flex flex-col w-full h-full items-center justify-center text-justify">
-            <div className="flex flex-col gap-2 w-full max-w-[900px] h-full bg-white p-6 border
+            <div className="flex flex-col gap-2 w-full max-w-[900px] h-full bg-white p-6
                 overflow-auto scrollbar scrollbar-thumb-primary-600/30">
                 <div className="flex h-fit px-2">
                     <ResumeHeader/>
                 </div>
                 <div className="min-h-[1px] bg-primary-600 mb-2"/>
-                <div className="flex gap-2 h-fit px-2">
-                    <Heading value="References :"/>
+                <div className="flex flex-col gap-1 h-fit px-2 mb-1">
+                    <Heading value="References"/>
                     <Text value={ResumeData.references}/>
                 </div>
                 <div className="flex flex-col gap-4 h-fit px-2">
@@ -53,12 +53,14 @@ const HomePage = () => {
     );
 };
 
-const CompanyHeader = ({ companyData }) => {
+const CompanyHeader = ({companyData}) => {
     return (
-        <div className="flex gap-1 w-full">
-            <Heading value={`${companyData.name}, ${companyData.location} - `}/>
-            <Designation titles={companyData.titles}/>
-            <div className="ml-auto">
+        <div className="flex flex-col sm:flex-row gap-1 w-full">
+            <div className="flex gap-1">
+                <Heading value={`${companyData.name}, ${companyData.location} - `}/>
+                <Designation titles={companyData.titles}/>
+            </div>
+            <div className="sm:ml-auto">
                 <Duration value={companyData.duration}/>
             </div>
         </div>
