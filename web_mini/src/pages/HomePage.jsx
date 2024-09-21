@@ -47,7 +47,7 @@ const HomePage = () => {
                                 </div>))}
                     </div>
                 </div>
-                <div className="flex sm:min-h-[50px] max-h-[1px] my-2 border-t border-primary-600"/>
+                <div className="flex min-h-[50px] sm:max-h-[1px] sm:min-h-[1px] mt-2 border-t border-primary-600"/>
             </div>
         </div>
     );
