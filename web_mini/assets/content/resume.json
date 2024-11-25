@@ -7,7 +7,7 @@
     "linkedin": "https://www.linkedin.com/in/anujkau",
     "github": "http://github.com/avertocle"
   },
-  "references": "Co-Founders/CTOs of any of the companies mentioned in the CV (except Citrix of-course)",
+  "references": "Co-Founders/CTOs of any of the startups mentioned in the CV.",
   "companies": {
     "byteswan": {
       "name": "Byteswan",
@@ -16,30 +16,30 @@
         "Owner"
       ],
       "duration": "Feb ’21 - Present [ 3y 9m ]",
-      "description": "I work as a full-time director of engineering (limited term engagement) with early stage startups, doing whatever-it-takes to get them to their next stage. I contributed across : coding, hiring, people management, devops, dev-processes, strategy, product & design. I transition out once the product is stable and I’ve hired the right team and leadership.",
+      "description": "I work as a full-time director of engineering with early stage startups (6m-1y timeframe), doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product & design. I transition out once the engineering execution is stable and I’ve hired the right team which includes my replacement.",
       "sub_companies": {
         "aurva": {
           "name": "Aurva",
           "domain": "Data Security",
           "duration": "Oct ’23 - Oct '24 [ 1y ]",
-          "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
+          "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed on coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
         },
         "doco": {
           "name": "Doco",
           "domain": "B2B Commerce",
           "duration": "Apr - Sep '23 [ 6m ]",
-          "description": "Built V1 of their product, drove customer acquisition and got their TPV to 25L per month, enabling them to raise their seed round."
+          "description": "Built the product from scratch, drove customer acquisition and got their TPV to 25L per month, enabling them to raise their pre-seed."
         },
         "confidential_02": {
           "name": "Confidential",
           "domain": "Planning Gig",
-          "duration": "Jan - Mar '23 [ 6m ]",
-          "description": "Planning gig. Product, design, tech architecture, hiring plan, team budget, execution timelines."
+          "duration": "Jan - Mar '23 [ 3m ]",
+          "description": "Planning gig : Product, design, tech architecture, hiring plan, team budget, execution timelines."
         },
         "durianpay": {
           "name": "Durianpay",
           "domain": "Fintech",
-          "duration": "Jan - Dec '22 [ 6m ]",
+          "duration": "Jan - Dec '22 [ 1y ]",
           "description": "A seed stage startup building a payment gateway for Indonesia. Led an engg team of 10-15 members split across bangalore and jakarta, contributing on architecture, people management, execution & hiring. Transitioned out once the right team and cadence was set in place."
         },
         "aasthy": {
@@ -52,7 +52,7 @@
           "name": "Confidential",
           "domain": "Gaming",
           "duration": "Feb - Aug '21 [ 6m ]",
-          "description": "Led a team of 3 contractors to deliver multiple small hyper casual games for an Indie game studio."
+          "description": "Led a team of 3 contractors to deliver multiple small games for an indie game studio."
         }
       }
     },
@@ -66,13 +66,13 @@
       "duration": "Sep ’16 - Dec '20 [ 4y ]",
       "stack": "Golang, Redshift, AWS, NodeJs, Cocos2Dx, Unity",
       "descriptions": [
-        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops and hiring. Game had 4M DAU, 11M MAU. Total org size reporting averaged around 25 (dev + devops). Owned org-wide engineering hiring. Revamped the engg hiring process. Upskilled high potential ICs to take up org wide roles and pod leads to replace me as an EM before transitioning out.",
-        "Contributions as SSE : Complete ownership of Moonfrog Analytics Infra. Scaled the ETL-Pipeline to ingest 2B to 12B events per day and the warehouse infra to handle approx 12 TB. Various other features like monitoring/throttling/alerting infra for ETL-pipeline, automated reports, anomaly alerts, on-Demand data loading/transfer infra, in-house dashboarding platform, real-time monitoring/alerting infra for game liveops. Made a long term roadmap, hired 3 engineers and handed it over to a new EM."
+        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops. Game had 4M DAU, 11M MAU. Total team size reporting to me averaged around 25 (dev + devops). I also owned company wide hiring for engineering. Revamped the engg hiring process. Upskilled high potential ICs to take up company wide roles and squad-leads to replace me as an EM before transitioning out.",
+        "Contributions as SSE : Complete ownership of Moonfrog Analytics Infra. Scaled the ETL-Pipeline to ingest 12B (from 2B) events per day and the warehouse infra to handle approx 12 TB. Built functionality for observability, auditing, rate-limiting, reporting, anomalies and on-demand data population. Also built in-house tooling for automating internal operations. Finally, hired 3 engineers, planned 6m roadmap and handed the team over to a new EM."
       ]
     },
     "proptiger": {
       "name": "Proptiger",
-      "location": "Gurgaon",
+      "location": "NCR",
       "titles": [
         "SE",
         "SSE"
@@ -80,20 +80,20 @@
       "duration": "May ’14 - Jun '16 [ 2y 2m]",
       "stack": "Java, Spring, Solr, MySQL",
       "descriptions": [
-        "Complete ownership of Proptiger and Makaan search infrastructure. Improved the search CTR from 40% to 85%.",
+        "Led the demand-side engineering pod for relaunch of makaan.com platform, after acquisition by Proptiger.",
         "Scaled Proptiger Datalabs (B2B product for real-estate trend analysis) to support 20x more data.",
-        "Led the buyer-side part for the relaunch of makaan.com platform, after acquisition by Proptiger."
+        "Complete ownership of Proptiger and Makaan search infrastructure. Improved the search CTR from 40% to 85%."
       ]
     },
     "exarb": {
-      "name": "Exarb",
-      "location": "Bangalore",
+      "name": "Exarb (now Cogmac)",
+      "location": "Bangalore/NCR",
       "titles": [
         "Co-Founder"
       ],
       "duration": "Mar ’13 - mar '15 [ 2y ]",
       "stack": "Core-Java, Swing",
-      "description": "Built an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. Owned the trader facing part of the suite: product + ui/ux + dev + devops + customer support. Products Developed: Fully featured trading terminal with market feeds, P&L calc, reporting; admin portal; tools for trade-log analysis, benchmarking, historic analysis, trader behavior analysis"
+      "description": "Built an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. Owned the trader facing part of the suite: product + ui/ux + dev + devops + customer support. Products Developed: Fully featured trading terminal with market feeds, P&L calc, reporting; admin portal; internal tools for trade-log analysis, benchmarking, historic analysis, trader behavior analysis"
     },
     "citrix": {
       "name": "Citrix",
@@ -104,7 +104,7 @@
       ],
       "duration": "Jul ’11 - Feb '13 [ 1y 8m ]",
       "stack": "C/FreeBSD",
-      "description": "Extended GSLB (Global Server Load Balancing) stat aggregation from single box to a cluster for Citrix flagship product - NetScaler. Also, lots of maintenance work (250+ bug fixes and small features.). "
+      "description": "Extended GSLB (Global Server Load Balancing) stat aggregation from single box to a cluster for Citrix flagship product - NetScaler. Also, lots of character building maintenance work (250+ bug fixes and small features.). "
     }
   }
 }
