@@ -7,7 +7,7 @@
     "linkedin": "https://www.linkedin.com/in/anujkau",
     "github": "http://github.com/avertocle"
   },
-  "references": "Co-Founders/CTOs of any of the startups mentioned in the CV.",
+  "references": "Tech Co-Founders / CTOs of any of the startups mentioned in the CV.",
   "companies": {
     "byteswan": {
       "name": "Byteswan",
@@ -15,8 +15,8 @@
       "titles": [
         "Owner"
       ],
-      "duration": "Feb ’21 - Present [ 3y 9m ]",
-      "description": "I work as a full-time director of engineering with early stage startups (6m-1y timeframe), doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product & design. I transition out once the engineering execution is stable and I’ve hired the right team which includes my replacement.",
+      "duration": "Feb ’21 - Present [ 4y+ ]",
+      "description": "I work as a full-time director of engineering with early stage startups (6m-1y timeframe), doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product & design.",
       "sub_companies": {
         "aurva": {
           "name": "Aurva",
@@ -26,27 +26,27 @@
         },
         "doco": {
           "name": "Doco",
-          "domain": "B2B Commerce",
+          "domain": "B2B Commerce Portal",
           "duration": "Apr - Sep '23 [ 6m ]",
-          "description": "Built the product from scratch, drove customer acquisition and got their TPV to 25L per month, enabling them to raise their pre-seed."
+          "description": "Built the entire product from scratch, drove customer acquisition and got their TPV to 25L per month, enabling them to raise their pre-seed."
         },
         "confidential_02": {
           "name": "Confidential",
-          "domain": "Planning Gig",
+          "domain": "Consulting",
           "duration": "Jan - Mar '23 [ 3m ]",
-          "description": "Planning gig : Product, design, tech architecture, hiring plan, team budget, execution timelines."
+          "description": "Made a detailed engineering org plan : Tech architecture (backend, frontend, apps, infra), team budget and hiring, time/cost estimations."
         },
         "durianpay": {
           "name": "Durianpay",
           "domain": "Fintech",
           "duration": "Jan - Dec '22 [ 1y ]",
-          "description": "A seed stage startup building a payment gateway for Indonesia. Led an engg team of 10-15 members split across bangalore and jakarta, contributing on architecture, people management, execution & hiring. Transitioned out once the right team and cadence was set in place."
+          "description": "A seed stage startup building a payment gateway for Indonesia. Led an engg team of ~15 members split across Bangalore and Jakarta, contributing on architecture, people management, execution & hiring."
         },
         "aasthy": {
           "name": "Aasthy",
           "domain": "Fintech/Real Estate",
           "duration": "Sep - Dec '21 [ 4m ]",
-          "description": "Hired and led a small engineering team of 6 devs for an angel funded startup building a fractional real estate investment platform."
+          "description": "Hired, then led a small engineering team of 6 devs for an angel funded startup building a fractional real estate investment platform."
         },
         "confidential_01": {
           "name": "Confidential",
@@ -66,8 +66,8 @@
       "duration": "Sep ’16 - Dec '20 [ 4y ]",
       "stack": "Golang, Redshift, AWS, NodeJs, Cocos2Dx, Unity",
       "descriptions": [
-        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops. Game had 4M DAU, 11M MAU. Total team size reporting to me averaged around 25 (dev + devops). I also owned company wide hiring for engineering. Revamped the engg hiring process. Upskilled high potential ICs to take up company wide roles and squad-leads to replace me as an EM before transitioning out.",
-        "Contributions as SSE : Complete ownership of Moonfrog Analytics Infra. Scaled the ETL-Pipeline to ingest 12B (from 2B) events per day and the warehouse infra to handle approx 12 TB. Built functionality for observability, auditing, rate-limiting, reporting, anomalies and on-demand data population. Also built in-house tooling for automating internal operations. Finally, hired 3 engineers, planned 6m roadmap and handed the team over to a new EM."
+        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops. Game had 4M DAU, 11M MAU. Total team size reporting to me averaged around 25 (dev + devops). I also owned company wide hiring for engineering. Revamped the engg hiring process. Upskilled high potential ICs to take up company wide roles and mentored team-leads to become EMs.",
+        "Contributions as SSE : Complete ownership of Moonfrog Analytics Infra. Scaled the ETL-Pipeline to ingest 12B (from 2B) events per day and the warehouse infra to handle approx 12 TB. Built functionality for observability, auditing, rate-limiting, reporting, anomalies, on-demand data population, game client and server side and various other automations. Hired and led a team of 4 engineers later on."
       ]
     },
     "proptiger": {
