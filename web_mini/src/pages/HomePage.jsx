@@ -8,15 +8,10 @@ const HomePage = () => {
             className="flex flex-col w-full h-full items-center text-justify">
             <div className="flex flex-col gap-2 w-full max-w-[900px] h-full bg-white p-6
                 overflow-auto scrollbar scrollbar-thumb-primary-600/30">
-                <div className="flex h-fit px-2">
+                <div className="flex h-fit px-2 pb-2 border-b-2 border-primary-600">
                     <ResumeHeader/>
                 </div>
-                <div className="min-h-[1px] bg-primary-600 mb-2"/>
-                <div className="flex flex-col gap-1 h-fit px-2 mb-1">
-                    <Heading value="References"/>
-                    <Text value={ResumeData.references}/>
-                </div>
-                <div className="flex flex-col gap-4 h-fit px-2">
+                <div className="flex flex-col gap-4 h-fit px-2 mt-2">
                     <div className="flex flex-col gap-2">
                         <CompanyHeader companyData={ResumeData.companies.byteswan}/>
                         <Text value={ResumeData.companies.byteswan.description}/>

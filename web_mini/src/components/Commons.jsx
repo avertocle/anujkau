@@ -1,4 +1,4 @@
-import { HiXCircle } from 'react-icons/hi2';
+import { HiMiniArrowRightCircle } from 'react-icons/hi2';
 
 export const Text = ({value}) => {
     return <p>
@@ -9,8 +9,8 @@ export const Text = ({value}) => {
 export const ListItem = ({value}) => {
     return (
         <div className="flex gap-2 w-full">
-            <div className="mt-1">
-                <HiXCircle className="min-w-3 h-2 fill-primary-600"/>
+            <div className="mt-[3px]">
+                <HiMiniArrowRightCircle className="min-w-3 h-3 fill-primary-600"/>
             </div>
             <p>{value}</p>
         </div>

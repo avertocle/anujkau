@@ -5,9 +5,9 @@
   "contact": {
     "email": "anuj@byteswan.com",
     "linkedin": "https://www.linkedin.com/in/anujkau",
-    "github": "http://github.com/avertocle"
+    "github": "https://github.com/avertocle",
+    "byteswan": "https://byteswan.com"
   },
-  "references": "Tech Co-Founders / CTOs of any of the startups mentioned in the CV.",
   "companies": {
     "byteswan": {
       "name": "Byteswan",
@@ -15,13 +15,19 @@
       "titles": [
         "Owner"
       ],
-      "duration": "Feb ’21 - Present [ 4y+ ]",
-      "description": "I work as a full-time director of engineering with early stage startups (6m-1y timeframe), doing whatever-it-takes to get them to their next stage. I contribute across : coding, hiring, people management, devops, dev-processes, strategy, product & design.",
+      "duration": "Jan ’21 - Present [ 4y+ ]",
+      "description": "I work as a full-time director of engineering with early stage startups (6m-1y timeframe), helping them build their business and get to the next stage. I contribute across : coding, architecture, recruitment, people management, devops, dev-processes, product & design.",
       "sub_companies": {
+        "own-products": {
+            "name": "AdFree Games (Byteswan Products)",
+            "domain": "Gaming",
+            "duration": "Dec ’24 - Oct '25 [ 1y+ ]",
+            "description": "Building a suite of ad-free hypercasual games. Zeroad Games, Codepug, Wisp, Evve. Details at byteswan.com"
+        },
         "aurva": {
           "name": "Aurva",
           "domain": "Data Security",
-          "duration": "Oct ’23 - Oct '24 [ 1y ]",
+          "duration": "Oct ’23 - Nov '24 [ 1y ]",
           "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed on coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
         },
         "doco": {

@@ -13,10 +13,10 @@ const ResumeHeader = () => {
             </div>
             <div className="flex gap-1 justify-between sm:flex-col sm:justify-end sm:items-end">
                 <p>{ResumeData.contact.email}</p>
-                {/*<p>{ResumeData.contact.phone}</p>*/}
                 <p className="flex gap-2">
-                    <Link className="text-blue-600" to={ResumeData.contact.linkedin}>LinkedIn</Link>
-                    <Link className="text-blue-600" to={ResumeData.contact.github}>Github</Link>
+                    <Link className="text-blue-600" target="_blank" to={ResumeData.contact.byteswan}>Byteswan</Link>
+                    <Link className="text-blue-600" target="_blank" to={ResumeData.contact.linkedin}>LinkedIn</Link>
+                    <Link className="text-blue-600" target="_blank" to={ResumeData.contact.github}>Github</Link>
                 </p>
             </div>
         </div>
