@@ -16,31 +16,25 @@
         "Owner"
       ],
       "duration": "Jan ’21 - Present [ 4y+ ]",
-      "description": "I work as a full-time director of engineering with early stage startups (6m-1y timeframe), helping them build their business and get to the next stage. I contribute across : coding, architecture, recruitment, people management, devops, dev-processes, product & design.",
+      "description": "I work as a head of software engineering with early stage startups, taking up full-time but fixed term (6m-1y) engagements, helping them build their business and get to the next stage. I contribute across : coding, architecture, recruitment, people management, devops, dev-processes, product & design. A concise list of my engagements is listed below.",
       "sub_companies": {
         "own-products": {
             "name": "AdFree Games (Byteswan Products)",
             "domain": "Gaming",
-            "duration": "Dec ’24 - Oct '25 [ 1y+ ]",
+            "duration": "Jan ’25 - Present [ 1y+ ]",
             "description": "Building a suite of ad-free hypercasual games. Zeroad Games, Codepug, Wisp, Evve. Details at byteswan.com"
         },
         "aurva": {
           "name": "Aurva",
           "domain": "Data Security",
           "duration": "Oct ’23 - Nov '24 [ 1y ]",
-          "description": "A seed stage startup building an enterprise data security product for US and India markets. Contributed on coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
+          "description": "A seed stage startup building an enterprise data security product for US and India markets. Led a team of ~10 members, contributed towards coding, architecture, product, design, hiring and micro-managing execution. Helped them close their first 5 big ticket enterprise customers."
         },
         "doco": {
           "name": "Doco",
           "domain": "B2B Commerce Portal",
           "duration": "Apr - Sep '23 [ 6m ]",
-          "description": "Built the entire product from scratch, drove customer acquisition and got their TPV to 25L per month, enabling them to raise their pre-seed."
-        },
-        "confidential_02": {
-          "name": "Confidential",
-          "domain": "Consulting",
-          "duration": "Jan - Mar '23 [ 3m ]",
-          "description": "Made a detailed engineering org plan : Tech architecture (backend, frontend, apps, infra), team budget and hiring, time/cost estimations."
+          "description": "Solely built the entire product from scratch (frontend, backend, infra, ui/ux), drove customer acquisition, enabling them to raise their angel round."
         },
         "durianpay": {
           "name": "Durianpay",
@@ -54,11 +48,11 @@
           "duration": "Sep - Dec '21 [ 4m ]",
           "description": "Hired, then led a small engineering team of 6 devs for an angel funded startup building a fractional real estate investment platform."
         },
-        "confidential_01": {
-          "name": "Confidential",
-          "domain": "Gaming",
-          "duration": "Feb - Aug '21 [ 6m ]",
-          "description": "Led a team of 3 contractors to deliver multiple small games for an indie game studio."
+        "misc": {
+          "name": "Short Term Engangements",
+          "domain": "Multiple Domains",
+          "duration": "",
+          "description": "Multiple smaller term (~3m) projects with various clients contributing towards recruitment, infra planning, cost optimization, stability and observablity."
         }
       }
     },
@@ -72,8 +66,8 @@
       "duration": "Sep ’16 - Dec '20 [ 4y ]",
       "stack": "Golang, Redshift, AWS, NodeJs, Cocos2Dx, Unity",
       "descriptions": [
-        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops. Game had 4M DAU, 11M MAU. Total team size reporting to me averaged around 25 (dev + devops). I also owned company wide hiring for engineering. Revamped the engg hiring process. Upskilled high potential ICs to take up company wide roles and mentored team-leads to become EMs.",
-        "Contributions as SSE : Complete ownership of Moonfrog Analytics Infra. Scaled the ETL-Pipeline to ingest 12B (from 2B) events per day and the warehouse infra to handle approx 12 TB. Built functionality for observability, auditing, rate-limiting, reporting, anomalies, on-demand data population, game client and server side and various other automations. Hired and led a team of 4 engineers later on."
+        "Contributions as EM : Led engineering for Moonfrog’s biggest game TPG (TeenPattiGold). Complete ownership of engg execution, processes, roadmap, live-ops. Game had 4M DAU, 11M MAU. Total team size reporting to me averaged around 25 (dev + devops). I also owned company wide hiring for engineering. Revamped the engg hiring process and closed all open roles. Upskilled high potential ICs to take up company wide roles and mentored team-leads to become EMs.",
+        "Contributions as SSE : Complete ownership of Moonfrog's in-house analytics Infra. Scaled the ETL-Pipeline to ingest 12B (from 2B) events per day and the warehouse infra to handle approx 12 TB. Built functionality for observability, auditing, rate-limiting, reporting, anomalies, on-demand data population, client/server sdks and various other automations. Hired and led a team of 4 engineers later on."
       ]
     },
     "proptiger": {
@@ -86,7 +80,7 @@
       "duration": "May ’14 - Jun '16 [ 2y 2m]",
       "stack": "Java, Spring, Solr, MySQL",
       "descriptions": [
-        "Led the demand-side engineering pod for relaunch of makaan.com platform, after acquisition by Proptiger.",
+        "Led the demand-side engineering squad for integration and relaunch of makaan.com platform, after acquisition by Proptiger.",
         "Scaled Proptiger Datalabs (B2B product for real-estate trend analysis) to support 20x more data.",
         "Complete ownership of Proptiger and Makaan search infrastructure. Improved the search CTR from 40% to 85%."
       ]
@@ -99,7 +93,7 @@
       ],
       "duration": "Mar ’13 - mar '15 [ 2y ]",
       "stack": "Core-Java, Swing",
-      "description": "Built an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. Owned the trader facing part of the suite: product + ui/ux + dev + devops + customer support. Products Developed: Fully featured trading terminal with market feeds, P&L calc, reporting; admin portal; internal tools for trade-log analysis, benchmarking, historic analysis, trader behavior analysis"
+      "description": "Built an end-to-end trading suite aimed at F&O arbitrage in NSE/BSE markets. Owned the trader facing part of the suite: product + ui/ux + dev + devops + customer support. Products Developed: Fully featured trading terminal with market feeds, P&L calc, reporting; admin portal; internal tools for trade-log analysis, benchmarking, historic analysis, trader behavior analysis."
     },
     "citrix": {
       "name": "Citrix",

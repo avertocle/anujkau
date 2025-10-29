@@ -7,7 +7,7 @@ const HomePage = () => {
         <div
             className="flex flex-col w-full h-full items-center text-justify">
             <div className="flex flex-col gap-2 w-full max-w-[900px] h-full bg-white p-6
-                overflow-auto scrollbar scrollbar-thumb-primary-600/30">
+                overflow-auto scrollbar-none">
                 <div className="flex h-fit px-2 pb-2 border-b-2 border-primary-600">
                     <ResumeHeader/>
                 </div>
