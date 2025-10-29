@@ -64,11 +64,11 @@ const CompanyHeader = ({companyData}) => {
 
 const SubCompanyHeader = ({companyData}) => {
     return (
-        <div className="flex gap-1 w-full">
+        <div className="flex flex-col sm:flex-row gap-1 w-full">
             <p className="font-semibold">{`${companyData.name}`}
                 <span className="font-normal">{` | ${companyData.domain}`}</span>
             </p>
-            <div className="ml-auto">
+            <div className="sm:ml-auto">
                 <Duration value={companyData.duration}/>
             </div>
         </div>
